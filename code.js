@@ -1,11 +1,71 @@
 "useStrict";
+//===8===
+// Write a function that returns the number of users in a chatroom based on the following rules:
+
+// If there is no one, return "no one online".
+// If there is 1 person, return "user1 online".
+// If there are 2 people, return "user1 and user2 online".
+// If there are n>2 people, return the first two names and add "and n-2 more online".
+
+// function chatroomStatus(users) {
+//   if (users.length < 1) {
+//     return "no one online";
+//   }
+//   if (users.length === 1) {
+//     let arr = users.join("");
+//     return `${arr} online`;
+//   }
+//   if (users.length === 2) {
+//     let arr = users.join(" and ");
+//     return `${arr} online`;
+//   } else {
+//     let arr = users.slice(0, 2).join(", ");
+//     return `${arr} and ${users.length - 2} more online`;
+//   }
+
+//   // return users.join(" and ");
+// }
+
+// console.log(chatroomStatus(["becky325", "asdsad", "sasad"]));
+//===7===
+// Assume a program only reads .js or .jsx files. Write a function that accepts a file path and returns true if it can read the file and false if it can't.
+// function isJS(path) {
+//   let regex = /(jsx|season) |(js|season)/g;
+//   return regex.test(path);
+// }
+// console.log(isJS("/users/user.jsx"));
+//===6===
+// A value is omnipresent if it exists in every subarray inside the main array.
+// function isOmnipresent(arr, val) {
+//   return arr.every((value) => value.includes(val));
+// }
+// console.log(
+//   isOmnipresent(
+//     [
+//       [1, 1],
+//       [1, 3],
+//       [5, 1],
+//       [6, 1],
+//     ],
+//     3
+//   )
+// );
+// === 5 ===
+// Given an array and an integer n, return the sum of the first n numbers in the array.
+
+// function sliceSum(arr, n) {
+//   return n === 0 ? 0 : arr.slice(0, n).reduce((prev, cur) => prev + cur);
+// }
+
+// sliceSum([1, 3, 2], 2);
+
 // // === 5 ===
 // Create a function to convert an array of percentages to their decimal equivalents.
-function convertToDecimal(perc) {
-  return perc.map((val) => parseFloat(val) / 100);
-}
+// function convertToDecimal(perc) {
+//   return perc.map((val) => parseFloat(val) / 100);
+// }
 
-console.log(convertToDecimal(["1%", "2%", "3%"]));
+// console.log(convertToDecimal(["1%", "2%", "3%"]));
 
 // // === 4 ===
 // Create a function that takes a string str and performs simple encoding as per the following method:
