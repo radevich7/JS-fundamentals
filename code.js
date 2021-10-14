@@ -1,4 +1,26 @@
 "useStrict";
+//===10===
+// Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+function highLow(str) {
+  let res = str.split(" ").map((val) => parseInt(val));
+
+  if (res.length <= 1) {
+    return [res[0], res[0]];
+  } else {
+    return [`${Math.max(...res)} ${Math.min(...res)}`];
+  }
+}
+
+console.log(highLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"));
+//===9===
+// You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
+// function minutesToSeconds(time) {
+//   let res = time.split(":");
+//   return res.reduce((acc, time) => acc * 60 + +time);
+//   console.log(res);
+// }
+
+// console.log(minutesToSeconds("01:00"));
 //===8===
 // Write a function that returns the number of users in a chatroom based on the following rules:
 
