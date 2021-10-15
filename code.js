@@ -1,18 +1,57 @@
 "useStrict";
-//===10===
-// Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
-function highLow(str) {
-  let res = str.split(" ").map((val) => parseInt(val));
-
-  if (res.length <= 1) {
-    return [res[0], res[0]];
-  } else {
-    return [`${Math.max(...res)} ${Math.min(...res)}`];
-  }
+//===14===
+// Create a function to count the number of 1s in a 2D array.
+function countOnes(matrix) {
+  console.log(matrix.flat(1).filter((val) => val === 1).length);
 }
 
-console.log(highLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"));
-//===9===
+console.log(
+  countOnes([
+    [1, 0, 1],
+    [0, 0, 0],
+    [0, 0, 1],
+    [1, 0, 1],
+  ])
+);
+//===13===
+// function addNums(nums) {
+//   return nums
+//     .split(", ")
+//     .map((val) => parseInt(val))
+//     .reduce((prev, cur) => prev + cur);
+// }
+// console.log(addNums("2, 5, 1, 8, 4"));
+//===12===
+// Given a 10x10 grid of numbers 1-100, return the Spotlight Sum, given a number n. The spotlight sum can be defined as the total of the 8 numbers immediately surrounding the number n on the grid, including n in the total.
+
+// function spotlightSum(n) {
+//   return n * 9;
+// }
+// console.log(spotlightSum(18));
+
+//===11===
+// Create a function that returns the number of decimal places a number (given as a string) has. Any zeros after the decimal point count towards the number of decimal places.
+// function getDecimalPlaces(num) {
+//   let str = num.indexOf(".");
+//   let length = num.length - 1;
+//   return str === -1 ? 0 : length - str;
+// }
+
+// console.log(getDecimalPlaces("322"));
+//===10===
+// Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+// function highLow(str) {
+//   let res = str.split(" ").map((val) => parseInt(val));
+
+//   if (res.length <= 1) {
+//     return [res[0], res[0]];
+//   } else {
+//     return [`${Math.max(...res)} ${Math.min(...res)}`];
+//   }
+// }
+
+// console.log(highLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"));
+// //===9===
 // You are given the length of a video in minutes. The format is mm:ss (e.g.: "02:54"). Create a function that takes the video length and return it in seconds.
 // function minutesToSeconds(time) {
 //   let res = time.split(":");
