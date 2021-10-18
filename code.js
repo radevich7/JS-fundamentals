@@ -1,4 +1,23 @@
 "useStrict";
+//===18===
+
+function spelling(str) {
+  let res = [];
+  for (let i = 1; i <= str.length; i++) {
+    res.push(str.slice(0, i));
+  }
+  return res;
+}
+console.log(spelling("jkkake"));
+//===17===
+// Write a regular expression that matches a string if and only if it is a valid zip code.
+// Zipcodes must be 5 digits long exactly and only contain numbers.
+// Not allowed: non-numeric characters or whitespaces.
+// This challenge is designed to use Regex only.
+
+// let x = /^\d{5}$/;
+// /* Write your regular expression here */
+
 //===16===
 // Create two functions: isPrefix(word, prefix-) and isSuffix(word, -suffix).
 
