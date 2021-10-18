@@ -1,5 +1,25 @@
 "useStrict";
+//===16===
+// Create two functions: isPrefix(word, prefix-) and isSuffix(word, -suffix).
 
+// isPrefix should return true if it begins with the prefix argument.
+// isSuffix should return true if it ends with the suffix argument.
+// Otherwise return false.
+
+// function isPrefix(word, prefix) {
+//   let res = prefix.slice(0, -1);
+
+//   return word.includes(res);
+// }
+
+// function isSuffix(word, suffix) {
+//   let res = suffix.slice(1);
+
+//   return word.includes(res);
+// }
+
+// console.log(isPrefix("automation", "auto-"));
+// console.log(isSuffix("arachnophobia", "-phobia"));
 //===15===
 // function num_of_digits(num) {
 //   let string = Math.abs(num);
