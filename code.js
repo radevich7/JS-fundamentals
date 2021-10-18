@@ -1,18 +1,25 @@
 "useStrict";
-//===14===
-// Create a function to count the number of 1s in a 2D array.
-function countOnes(matrix) {
-  console.log(matrix.flat(1).filter((val) => val === 1).length);
-}
 
-console.log(
-  countOnes([
-    [1, 0, 1],
-    [0, 0, 0],
-    [0, 0, 1],
-    [1, 0, 1],
-  ])
-);
+//===15===
+// function num_of_digits(num) {
+//   let string = Math.abs(num);
+//   console.log(+Math.log10(string).toFixed() + 1);
+// }
+// console.log(num_of_digits(2));
+// //===14===
+// // Create a function to count the number of 1s in a 2D array.
+// function countOnes(matrix) {
+//   console.log(matrix.flat(1).filter((val) => val === 1).length);
+// }
+
+// console.log(
+//   countOnes([
+//     [1, 0, 1],
+//     [0, 0, 0],
+//     [0, 0, 1],
+//     [1, 0, 1],
+//   ])
+// );
 //===13===
 // function addNums(nums) {
 //   return nums
