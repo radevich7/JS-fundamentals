@@ -1,4 +1,18 @@
 "useStrict";
+//===20===
+// Write a function that receives two portions of a path and joins them. The portions will be joined with the "/" separator. There could be only one separator and if it is not present it should be added.
+
+function joinPath(portion1, portion2) {
+  let regex = /\//g;
+  let new1 = portion1.replace(regex, "");
+  let new2 = portion2.replace(regex, "");
+  return `${new1}/${new2}`;
+
+  // return !str?str.push('/'):
+  // console.log(str);
+}
+
+console.log(joinPath("r1AiTrL/", "KkyjD3K"));
 // //===19===
 // You need to detect what browser is being used. Create a function that takes a string (browser identifier) and returns the browser name.
 
