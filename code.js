@@ -1,14 +1,22 @@
 "useStrict";
-//===18===
+// //===18===
+// Write a function that takes a credit card number and only displays the last four characters. The rest of the card number must be replaced by ************.
 
-function spelling(str) {
-  let res = [];
-  for (let i = 1; i <= str.length; i++) {
-    res.push(str.slice(0, i));
-  }
-  return res;
-}
-console.log(spelling("jkkake"));
+// function cardHide(card) {
+//   let num = card.slice(0, -4);
+//   let smth = "*".repeat(num.length);
+
+//   return `${smth}${card.slice(-4)}`;
+// }
+// console.log(cardHide("1234123456785678"));
+// function spelling(str) {
+//   let res = [];
+//   for (let i = 1; i <= str.length; i++) {
+//     res.push(str.slice(0, i));
+//   }
+//   return res;
+// }
+// console.log(spelling("jkkake"));
 //===17===
 // Write a regular expression that matches a string if and only if it is a valid zip code.
 // Zipcodes must be 5 digits long exactly and only contain numbers.
