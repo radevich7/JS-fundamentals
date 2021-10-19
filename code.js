@@ -1,18 +1,28 @@
 "useStrict";
-//===20===
+//===21===
+// Create a function that returns true if the first array is a subset of the second. Return false otherwise.
+// function isSubset(arr1, arr2) {
+//   let res = arr1
+//     .map((val) => arr2.includes(val))
+//     .filter((val) => val === false);
+//   return res.length > 0 ? false : true;
+// }
+
+// console.log(isSubset([3, 2, 5], [5, 3, 7, 9, 2]));
+// //===20===
 // Write a function that receives two portions of a path and joins them. The portions will be joined with the "/" separator. There could be only one separator and if it is not present it should be added.
 
-function joinPath(portion1, portion2) {
-  let regex = /\//g;
-  let new1 = portion1.replace(regex, "");
-  let new2 = portion2.replace(regex, "");
-  return `${new1}/${new2}`;
+// function joinPath(portion1, portion2) {
+//   let regex = /\//g;
+//   let new1 = portion1.replace(regex, "");
+//   let new2 = portion2.replace(regex, "");
+//   return `${new1}/${new2}`;
 
-  // return !str?str.push('/'):
-  // console.log(str);
-}
+//   // return !str?str.push('/'):
+//   // console.log(str);
+// }
 
-console.log(joinPath("r1AiTrL/", "KkyjD3K"));
+// console.log(joinPath("r1AiTrL/", "KkyjD3K"));
 // //===19===
 // You need to detect what browser is being used. Create a function that takes a string (browser identifier) and returns the browser name.
 
