@@ -1,4 +1,22 @@
 "useStrict";
+// ===28===
+// Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+// function reverseCase(str) {
+//   // 90
+//   let arr = str
+//     .split("")
+//     .map((character) => {
+//       if (character == character.toUpperCase()) {
+//         return character.toLowerCase();
+//       } else {
+//         return character.toUpperCase();
+//       }
+//     })
+//     .join("");
+
+//   console.log(arr);
+// }
+// console.log(reverseCase("Happy Birthday"));
 // ===27===
 // function calculateDifference(obj, limit) {
 //   return Object.values(obj).reduce((acc, cur) => acc + cur) - limit;
