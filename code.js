@@ -1,4 +1,15 @@
 "useStrict";
+// ===29===
+// Create a function that takes a "base number" as an argument. This function should return another function which takes a new argument, and returns the sum of the "base number" and the new argument.
+
+// Please check the examples below for a clearer representation of the behavior expected
+
+// function makePlusFunction(baseNum) {
+//   return (x) => x + baseNum;
+// }
+// const plusTwo = makePlusFunction(2);
+
+// console.log(plusTwo(0));
 // ===28===
 // Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
 // function reverseCase(str) {
