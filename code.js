@@ -1,10 +1,13 @@
 "useStrict";
+// ===26===
+// If you've completed this RegEx series from I to XXII then you have been exposed to all of MDN's documentation on regular expressions special characters. You can check my Collections under Basic Reg Ex in my profile if you missed any. This next part of the series is to help solidify what you've learned. In order to save time I will be searching the web to find regular expression exercises to post here.
+// const regex = /^$/g;
 // ===25===
 // Create a function which returns the number of true values there are in an array.
-function countTrue(arr) {
-  return arr.filter((val) => val === true).length;
-}
-console.log(countTrue([true, false, false, true, false]));
+// function countTrue(arr) {
+//   return arr.filter((val) => val === true).length;
+// }
+// console.log(countTrue([true, false, false, true, false]));
 // ===24===
 // In a board game, a piece may advance 1-6 tiles forward depending on the number rolled on a six-sided dice. If you advance your piece onto the same tile as another player's piece, both of you earn a bonus.
 
