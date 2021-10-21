@@ -1,14 +1,20 @@
 "useStrict";
-//===24===
+// ===25===
+// Create a function which returns the number of true values there are in an array.
+function countTrue(arr) {
+  return arr.filter((val) => val === true).length;
+}
+console.log(countTrue([true, false, false, true, false]));
+// ===24===
 // In a board game, a piece may advance 1-6 tiles forward depending on the number rolled on a six-sided dice. If you advance your piece onto the same tile as another player's piece, both of you earn a bonus.
 
 // Can you reach your friend's tile number in the next roll? Create a function that returns if it's possible to earn a bonus when you roll the dice.
 
-function possibleBonus(a, b) {
-  return b - a <= 6 && b - a > 0;
-}
-console.log(possibleBonus(1, 9));
-//===23===
+// function possibleBonus(a, b) {
+//   return b - a <= 6 && b - a > 0;
+// }
+// console.log(possibleBonus(1, 9));
+// //===23===
 // Create a function that takes three parameters where:
 
 // x is the start of the range (inclusive).
