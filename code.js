@@ -1,4 +1,10 @@
 "useStrict";
+// ===27===
+// function calculateDifference(obj, limit) {
+//   return Object.values(obj).reduce((acc, cur) => acc + cur) - limit;
+// }
+// const obj = { skate: 20000, painting: 30000, shoes: 1 };
+// console.log(calculateDifference(obj, 50000));
 // ===26===
 // If you've completed this RegEx series from I to XXII then you have been exposed to all of MDN's documentation on regular expressions special characters. You can check my Collections under Basic Reg Ex in my profile if you missed any. This next part of the series is to help solidify what you've learned. In order to save time I will be searching the web to find regular expression exercises to post here.
 // const regex = /^$/g;
