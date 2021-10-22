@@ -1,11 +1,20 @@
 "useStrict";
+// ===33===
+// Given a word, write a function that returns the first index and the last index of a character.
+function charIndex(word, char) {
+  let first = word.indexOf(char);
+  let last = word.lastIndexOf(char);
+  return first === -1 || last === -1 ? undefined : [first, last];
+}
+
+console.log(charIndex("hello", "l"));
 // ===32===
 // Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.
-function toArray(obj) {
-  return Object.entries(obj);
-}
-console.log(toArray({ a: 1, b: 2 }));
-// ===31===
+// function toArray(obj) {
+//   return Object.entries(obj);
+// }
+// console.log(toArray({ a: 1, b: 2 }));
+// // ===31===
 // Create a function that concatenates n input arrays, where n is variable.
 // function concat(...args) {
 //   let arr = args.reduce((prev, cur) => {
