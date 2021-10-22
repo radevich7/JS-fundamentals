@@ -1,8 +1,20 @@
 "useStrict";
+// ===31===
+// Create a function that concatenates n input arrays, where n is variable.
+// function concat(...args) {
+//   let arr = args.reduce((prev, cur) => {
+//     return prev.concat(cur);
+//   });
+//   return arr;
+// }
+// console.log(concat([1, 2, 3], [4, 5], [6, 7]));
+
 // ===30===
 // The right shift operation is similar to floor division by powers of two.
 
 // Sample calculation using the right shift operator ( >> ):
+// const shiftToRight = (x, y) => Math.floor(x/2 ** y);
+
 // ===29===
 // Create a function that takes a "base number" as an argument. This function should return another function which takes a new argument, and returns the sum of the "base number" and the new argument.
 
