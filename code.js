@@ -1,4 +1,17 @@
 "useStrict";
+// ===38===
+
+function isRepdigit(num) {
+  if (num < 0) {
+    return false;
+  } else {
+    let set = new Set(num.toString().split(""));
+
+    return set.size > 1 ? false : true;
+  }
+}
+
+console.log(isRepdigit(622));
 // ===37===
 // Write a function that takes all even-indexed characters and odd-indexed characters from a string and concatenates them together.
 
