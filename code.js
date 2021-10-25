@@ -1,5 +1,16 @@
 "useStrict";
-// ===36===
+// ===37===
+// Write a function that takes all even-indexed characters and odd-indexed characters from a string and concatenates them together.
+
+// function indexShuffle(str) {
+//   const even = [...str].filter((char, i) => i % 2 === 0);
+//   const odd = [...str].filter((char, i) => i % 2);
+
+//   return [...even, ...odd].join("");
+// }
+
+// console.log(indexShuffle("it was a beautiful day"));
+// // ===36===
 // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
 // function arrayOfMultiples(num, length) {
 //   return Array.from({ length }, (_, i) => num * (i + 1));
