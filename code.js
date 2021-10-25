@@ -1,10 +1,18 @@
 "useStrict";
+// ===36===
+// Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+// function arrayOfMultiples(num, length) {
+//   return Array.from({ length }, (_, i) => num * (i + 1));
+// }
+
+// console.log(arrayOfMultiples(7, 5));
+
 // ===35===
-function triangle(n) {
-  let res = (n * (n + 1)) / 2;
-  return res;
-}
-console.log(triangle(3));
+// function triangle(n) {
+//   let res = (n * (n + 1)) / 2;
+//   return res;
+// }
+// console.log(triangle(3));
 
 // ===34===
 // Create a function that takes an object and returns the keys and values as separate arrays. Return the keys sorted alphabetically, and their corresponding values in the same order.
