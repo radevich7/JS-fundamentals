@@ -1,17 +1,30 @@
 "useStrict";
-// ===38===
-
-function isRepdigit(num) {
-  if (num < 0) {
-    return false;
-  } else {
-    let set = new Set(num.toString().split(""));
-
-    return set.size > 1 ? false : true;
-  }
+// ===39===
+Write a function that converts an object into an array of keys and values.
+function objectToArray(obj) {
+  return Object.entries(obj);
 }
 
-console.log(isRepdigit(622));
+// console.log(
+//   objectToArray({
+//     D: 1,
+//     B: 2,
+//     C: 3,
+//   })
+// );
+// ===38===
+
+// function isRepdigit(num) {
+//   if (num < 0) {
+//     return false;
+//   } else {
+//     let set = new Set(num.toString().split(""));
+
+//     return set.size > 1 ? false : true;
+//   }
+// }
+
+// console.log(isRepdigit(622));
 // ===37===
 // Write a function that takes all even-indexed characters and odd-indexed characters from a string and concatenates them together.
 
