@@ -1,7 +1,9 @@
 "useStrict";
 // ===40===
 // Create a function that counts the integer's number of digits.
-
+// function count(n) {
+// 	return n<0 ?[...(Math.abs(n) + "")].map((n) => +n).length :[...(n + "")].map((n) => +n).length
+// }
 // ===40===
 // Create a function that takes numbers b and m as arguments and returns the derivative of the function f(x)=x^b with respect to x evaluated at x=m, where b and m are constants.
 
