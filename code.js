@@ -1,9 +1,20 @@
 "useStrict";
+// ===40===
+// Create a function that counts the integer's number of digits.
+
+// ===40===
+// Create a function that takes numbers b and m as arguments and returns the derivative of the function f(x)=x^b with respect to x evaluated at x=m, where b and m are constants.
+
+// function derivative(b, m) {
+//   return Math.pow(m, b - 1) * b;
+// }
+
+// console.log(derivative(3, -2));
 // ===39===
-Write a function that converts an object into an array of keys and values.
-function objectToArray(obj) {
-  return Object.entries(obj);
-}
+// Write a function that converts an object into an array of keys and values.
+// function objectToArray(obj) {
+//   return Object.entries(obj);
+// }
 
 // console.log(
 //   objectToArray({
