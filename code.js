@@ -4,10 +4,10 @@
 // Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
 
 function intWithinBounds(n, lower, upper) {
-  return n >= lower && n <= upper ? true : false;
+  return n >= lower && n < upper && Number.isInteger(n) ? true : false;
 }
 
-console.log(intWithinBounds(3, 1, 9));
+console.log(intWithinBounds(6, 1, 6));
 // ===42===
 
 // Create a function that returns true if two arrays contain identical values, and false otherwise.
