@@ -1,14 +1,24 @@
 "useStrict";
+
+// ===43===
+// Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
+
+function intWithinBounds(n, lower, upper) {
+  return n >= lower && n <= upper ? true : false;
+}
+
+console.log(intWithinBounds(3, 1, 9));
 // ===42===
+
 // Create a function that returns true if two arrays contain identical values, and false otherwise.
 
-function checkEquals(arr1, arr2) {
-  if (arr1.toString() == arr2.toString()) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function checkEquals(arr1, arr2) {
+//   if (arr1.toString() == arr2.toString()) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 // ===41===
 // Given a total due and an array representing the amount of change in your pocket, determine whether or not you are able to pay for the item. Change will always be represented in the following order: quarters, dimes, nickels, pennies.
