@@ -1,13 +1,17 @@
 "useStrict";
+// ===44===
+// Write a function that returns an anonymous function, which transforms its input by adding a particular suffix at the end.
+const add_suffix = (suffix) => (prefix) => prefix + suffix;
+console.log(add_ly("hopeless"));
 
 // ===43===
 // Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
 
-function intWithinBounds(n, lower, upper) {
-  return n >= lower && n < upper && Number.isInteger(n) ? true : false;
-}
+// function intWithinBounds(n, lower, upper) {
+//   return n >= lower && n < upper && Number.isInteger(n) ? true : false;
+// }
 
-console.log(intWithinBounds(6, 1, 6));
+// console.log(intWithinBounds(6, 1, 6));
 // ===42===
 
 // Create a function that returns true if two arrays contain identical values, and false otherwise.
