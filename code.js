@@ -1,8 +1,18 @@
 "useStrict";
+// ===45===
+// Given three arguments ⁠— an object obj of the stolen items, the pets name and a value ⁠— return an object with that name and value in it (as key-value pairs).
+
+function addName(obj, name, value) {
+  let obje = { ...obj };
+  obje[name] = value;
+  return obje;
+}
+
+console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440));
 // ===44===
 // Write a function that returns an anonymous function, which transforms its input by adding a particular suffix at the end.
-const add_suffix = (suffix) => (prefix) => prefix + suffix;
-console.log(add_ly("hopeless"));
+// const add_suffix = (suffix) => (prefix) => prefix + suffix;
+// console.log(add_ly("hopeless"));
 
 // ===43===
 // Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
