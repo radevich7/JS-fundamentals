@@ -1,14 +1,29 @@
 "useStrict";
+
+// ===46===
+// Create a function that takes a country's name and its area as arguments and returns the area of the country's proportion of the total world's landmass.
+// The total world's landmass is 148,940,000 [Km^2]
+// Round the result to two decimal places.
+
+function areaOfCountry(name, area) {
+  let totalLandmass = 148940000;
+  return `${name}% is ${((area * 100) / totalLandmass).toFixed(
+    2
+  )} of the total world's landmass`;
+}
+console.log(areaOfCountry("USA", 9372610));
+("USA is 6.29% of the total world's landmass");
+
 // ===45===
 // Given three arguments ⁠— an object obj of the stolen items, the pets name and a value ⁠— return an object with that name and value in it (as key-value pairs).
 
-function addName(obj, name, value) {
-  let obje = { ...obj };
-  obje[name] = value;
-  return obje;
-}
+// function addName(obj, name, value) {
+//   let obje = { ...obj };
+//   obje[name] = value;
+//   return obje;
+// }
 
-console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440));
+// console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440));
 // ===44===
 // Write a function that returns an anonymous function, which transforms its input by adding a particular suffix at the end.
 // const add_suffix = (suffix) => (prefix) => prefix + suffix;
