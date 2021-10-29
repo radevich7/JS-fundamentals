@@ -1,4 +1,11 @@
 "useStrict";
+// ===49===
+// Create a function that takes in a number as a string n and returns the number without trailing and leading zeros.
+// function removeLeadingTrailing(n) {
+//   return `${parseFloat(n)}`;
+// }
+// console.log(removeLeadingTrailing("230.000"));
+
 // ===48===
 // According to the lodash documentation, _.compact creates an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.
 
