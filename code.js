@@ -1,11 +1,20 @@
 "useStrict";
+// ===52===
+// Create a function that takes in an array (slot machine outcome) and returns true if all elements in the array are identical, and false otherwise. The array will contain 4 elements.
+// function testJackpot(result) {
+//   let res = new Set(result);
+//   return res.size > 1 ? false : true;
+// }
+
+// console.log(testJackpot(["@", "@", "@", "2"]));
+
 // ===51===
 // Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.
-function dis(price, discount) {
-  return parseFloat((price * ((100 - discount) / 100)).toFixed(2));
-}
+// function dis(price, discount) {
+//   return parseFloat((price * ((100 - discount) / 100)).toFixed(2));
+// }
 
-console.log(dis(100, 75));
+// console.log(dis(100, 75));
 // // ===50===
 // // Write a function that takes a number and returns the perimeter of either a circle or a square. The input will be in the form (letter l, number num) where the letter will be either "s" for square, or "c" for circle, and the number will be the side of the square or the radius of the circle.
 // // Perimeter of a square: 4 * side.
