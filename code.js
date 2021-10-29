@@ -1,4 +1,12 @@
 "useStrict";
+// ===53===
+// Create a function that takes an array of numbers and returns the second largest number.
+// function secondLargest(arr) {
+//   let sort = arr.sort((a, b) => b - a);
+//   return sort[1];
+// }
+
+// console.log(secondLargest([10, 40, 30, 20, 50]));
 // ===52===
 // Create a function that takes in an array (slot machine outcome) and returns true if all elements in the array are identical, and false otherwise. The array will contain 4 elements.
 // function testJackpot(result) {
