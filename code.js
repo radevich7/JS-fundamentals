@@ -1,18 +1,35 @@
 "useStrict";
+// ===48===
+// According to the lodash documentation, _.compact creates an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.
 
+// Your task is to build this helper function without using lodash. You will write a function that receives an array and removes all falsey values.
+
+// function compact(arr) {
+//   return arr.filter((el) => el);
+// }
+// console.log(compact([1, 0, false, null, undefined, "banana"]));
+// ===47===
+// Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers.
+
+// function calculator(num1, operator, num2) {
+//   let res = eval(`${num1}${operator}${num2}`);
+//   return num2 === 0 ? "Can't divide by 0!" : "${res}";
+// }
+
+// console.log(calculator("2", "/", "1"));
 // ===46===
 // Create a function that takes a country's name and its area as arguments and returns the area of the country's proportion of the total world's landmass.
 // The total world's landmass is 148,940,000 [Km^2]
 // Round the result to two decimal places.
 
-function areaOfCountry(name, area) {
-  let totalLandmass = 148940000;
-  return `${name}% is ${((area * 100) / totalLandmass).toFixed(
-    2
-  )} of the total world's landmass`;
-}
-console.log(areaOfCountry("USA", 9372610));
-("USA is 6.29% of the total world's landmass");
+// function areaOfCountry(name, area) {
+//   let totalLandmass = 148940000;
+//   return `${name}% is ${((area * 100) / totalLandmass).toFixed(
+//     2
+//   )} of the total world's landmass`;
+// }
+// console.log(areaOfCountry("USA", 9372610));
+// ("USA is 6.29% of the total world's landmass");
 
 // ===45===
 // Given three arguments ⁠— an object obj of the stolen items, the pets name and a value ⁠— return an object with that name and value in it (as key-value pairs).
