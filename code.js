@@ -1,4 +1,16 @@
 "useStrict";
+// ===50===
+// Write a function that takes a number and returns the perimeter of either a circle or a square. The input will be in the form (letter l, number num) where the letter will be either "s" for square, or "c" for circle, and the number will be the side of the square or the radius of the circle.
+// Perimeter of a square: 4 * side.
+// Perimeter of a circle: 6.28 * radius.
+
+function perimeter(l, num) {
+  let s = 4 * num;
+  let c = 6.28 * num;
+  return eval(l);
+}
+
+console.log(perimeter("s", 1));
 // ===49===
 // Create a function that takes in a number as a string n and returns the number without trailing and leading zeros.
 // function removeLeadingTrailing(n) {
