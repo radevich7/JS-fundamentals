@@ -1,4 +1,15 @@
 "useStrict";
+// ===54===
+// Create a function that moves all capital letters to the front of a word.
+function capToFront(s) {
+  let arr = s.split("");
+  return arr
+    .filter((val) => val === val.toUpperCase())
+    .concat(arr.filter((val) => val === val.toLowerCase()))
+    .join("");
+}
+
+console.log(capToFront("hApPy"));
 // ===53===
 // Create a function that takes an array of numbers and returns the second largest number.
 // function secondLargest(arr) {
