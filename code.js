@@ -1,15 +1,27 @@
 "useStrict";
+// ===55===
+// You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
+
+// If you can't find Nemo, return "I can't find Nemo :(".
+
+// function findNemo(sentence) {
+//   let index = sentence.split(" ").findIndex((word) => word === "Nemo") + 1;
+//   return index >= 0 ? `I found Nemo at ${index}!` : "I can't find Nemo :(";
+// }
+
+// console.log(findNemo("I am Ne mo Nemo !"));
+
 // ===54===
 // Create a function that moves all capital letters to the front of a word.
-function capToFront(s) {
-  let arr = s.split("");
-  return arr
-    .filter((val) => val === val.toUpperCase())
-    .concat(arr.filter((val) => val === val.toLowerCase()))
-    .join("");
-}
+// function capToFront(s) {
+//   let arr = s.split("");
+//   return arr
+//     .filter((val) => val === val.toUpperCase())
+//     .concat(arr.filter((val) => val === val.toLowerCase()))
+//     .join("");
+// }
 
-console.log(capToFront("hApPy"));
+// console.log(capToFront("hApPy"));
 // ===53===
 // Create a function that takes an array of numbers and returns the second largest number.
 // function secondLargest(arr) {
