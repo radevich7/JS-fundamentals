@@ -1,9 +1,23 @@
 "useStrict";
+// ===58===
+// function flatten(arr) {
+//   arr2 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     arr2.push(...arr[i]);
+//   }
+//   return arr2;
+// }
+// console.log(
+//   flatten([
+//     [1, 2],
+//     [3, 4],
+//   ])
+// );
 // ===57===
 // Create a function that takes a number (step) as an argument and returns the amount of boxes in that step of the sequence.
-function boxSeq(step) {}
-const boxSeq = (step) => (step % 2 === 0 ? step : step + 2);
-console.log(boxSeq(5));
+// function boxSeq(step) {}
+// const boxSeq = (step) => (step % 2 === 0 ? step : step + 2);
+// console.log(boxSeq(5));
 // ===56===
 // Create a function that squares every digit of a number.
 
