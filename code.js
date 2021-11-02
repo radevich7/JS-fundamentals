@@ -1,11 +1,18 @@
 "useStrict";
+// ===60===
+// Create a function that takes the height and radius of a cone as arguments and returns the volume of the cone rounded to the nearest hundredth.
+
+// function coneVolume(h, r) {
+//   return +((Math.PI * r ** 2 * h) / 3).toFixed(2);
+// }
+// console.log(coneVolume(3, 2));
 // ===59===
 // Return the sum of all items in an array, where each item is multiplied by its index (zero-based). For empty arrays, return 0.
-function indexMultiplier(arr) {
-  return arr.length === 0 ? 0 : arr.reduce((acc, cv, i) => acc + cv * i, 0);
-}
+// function indexMultiplier(arr) {
+//   return arr.length === 0 ? 0 : arr.reduce((acc, cv, i) => acc + cv * i, 0);
+// }
 
-console.log(indexMultiplier([9, 3, 7, -7]));
+// console.log(indexMultiplier([9, 3, 7, -7]));
 // ===58===
 // function flatten(arr) {
 //   arr2 = [];
