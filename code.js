@@ -1,17 +1,22 @@
 "useStrict";
+// ===57===
+// Create a function that takes a number (step) as an argument and returns the amount of boxes in that step of the sequence.
+function boxSeq(step) {}
+const boxSeq = (step) => (step % 2 === 0 ? step : step + 2);
+console.log(boxSeq(5));
 // ===56===
 // Create a function that squares every digit of a number.
 
-function squareDigits(n) {
-  let string = n
-    .toString()
-    .split("")
-    .map((num) => eval(num ** 2))
-    .join("");
-  return +string;
-}
+// function squareDigits(n) {
+//   let string = n
+//     .toString()
+//     .split("")
+//     .map((num) => eval(num ** 2))
+//     .join("");
+//   return +string;
+// }
 
-console.log(squareDigits(9119));
+// console.log(squareDigits(9119));
 
 // ===55===
 // You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
