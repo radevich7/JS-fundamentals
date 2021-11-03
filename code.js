@@ -1,5 +1,11 @@
 "useStrict";
 // ===62===
+// Create a function that, given an array similar to the above, sorts the array according to the "content of the elements".
+// function sortIt(arr) {
+//   return arr.flat(0).sort((a, b) => a - b);
+// }
+// console.log(sortIt([[4], [1], [3]]));
+// // ===62===
 // Create a function which concantenates the number 7 to the end of every chord in an array. Ignore all chords which already end with 7.
 
 // function jazzify(arr) {
