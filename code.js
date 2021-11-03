@@ -1,4 +1,19 @@
 "useStrict";
+// ===61===
+// A salesman has a number of cities to visit. They want to calculate the total number of possible paths they could take, visiting each city once before returning home. Return the total number of possible paths a salesman can travel, given n cities.
+
+// function paths(n) {
+//   if (n < 0) {
+//     return -1;
+//   } else if (n == 0) {
+//     return 1;
+//   } else {
+//     return n * paths(n - 1);
+//   }
+// }
+
+// console.log(paths(2));
+
 // ===60===
 // Create a function that takes the height and radius of a cone as arguments and returns the volume of the cone rounded to the nearest hundredth.
 
