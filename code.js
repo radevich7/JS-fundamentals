@@ -1,5 +1,14 @@
 "useStrict";
-
+// ===64===
+// An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
+function isSpecialArray(arr) {
+  for (let i = 0; i < arr.length; i++)
+    if (i % 2 !== arr[i] % 2) {
+      return false;
+    }
+  return true;
+}
+console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
 // ===63===
 // Create a function that calculates the missing value of 3 inputs using Ohm's law. The inputs are v, r or i (aka: voltage, resistance and current).
 // function ohmsLaw(v, r, i) {
