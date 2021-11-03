@@ -1,4 +1,12 @@
 "useStrict";
+// ===62===
+// Create a function which concantenates the number 7 to the end of every chord in an array. Ignore all chords which already end with 7.
+
+// function jazzify(arr) {
+//   return arr.map((val) => (val.includes("7") ? val : val.concat("7")));
+// }
+// console.log(jazzify(["G", "F", "C"]));
+
 // ===61===
 // A salesman has a number of cities to visit. They want to calculate the total number of possible paths they could take, visiting each city once before returning home. Return the total number of possible paths a salesman can travel, given n cities.
 
