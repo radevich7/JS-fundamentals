@@ -1,4 +1,22 @@
 "useStrict";
+
+// ===63===
+// Create a function that calculates the missing value of 3 inputs using Ohm's law. The inputs are v, r or i (aka: voltage, resistance and current).
+// function ohmsLaw(v, r, i) {
+//   let result;
+//   if (!v && r && i) {
+//     result = r * i;
+//   } else if (!r && v && i) {
+//     result = v / i;
+//   } else if (!i && v && r) {
+//     result = v / r;
+//   } else {
+//     return "Invalid";
+//   }
+//   return +result.toFixed(2);
+// }
+// console.log(ohmsLaw(12, "", ""));
+
 // ===62===
 // Create a function that, given an array similar to the above, sorts the array according to the "content of the elements".
 // function sortIt(arr) {
