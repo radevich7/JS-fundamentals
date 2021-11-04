@@ -1,15 +1,24 @@
 "useStrict";
+// ===65===
+// The Code tab has a code which attempts to add a clone of an array to itself. There is no error message, but the results are not as expected. Can you fix the code?
+function clone(arr) {
+  let newArr = [];
+  arr.map((val) => console.log(newArr.push(val)));
+  return [...arr, newArr];
+}
+
+console.log(clone([1, 2, 3]));
 // ===64===
 // An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
-function isSpecialArray(arr) {
-  for (let i = 0; i < arr.length; i++)
-    if (i % 2 !== arr[i] % 2) {
-      return false;
-    }
-  return true;
-}
-console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
-// ===63===
+// function isSpecialArray(arr) {
+//   for (let i = 0; i < arr.length; i++)
+//     if (i % 2 !== arr[i] % 2) {
+//       return false;
+//     }
+//   return true;
+// }
+// console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
+// // ===63===
 // Create a function that calculates the missing value of 3 inputs using Ohm's law. The inputs are v, r or i (aka: voltage, resistance and current).
 // function ohmsLaw(v, r, i) {
 //   let result;
