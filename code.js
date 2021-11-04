@@ -1,4 +1,16 @@
 "useStrict";
+
+// var startTime = performance.now();
+
+// function natural(n) {
+//   return (n * (n + 1)) / 2;
+// }
+// natural(1000000000000); // <---- measured code goes between startTime and endTime
+
+// var endTime = performance.now();
+
+// console.log(`Call to doSomething took ${endTime - startTime} milliseconds`);
+
 // ===69===
 // Create a function that takes an integer n and reverses it.
 // function rev(n) {
