@@ -1,14 +1,37 @@
 "useStrict";
+// ===67===
+// Create a function that returns the thickness (in meters) of a piece of paper after folding it n number of times. The paper starts off with a thickness of 0.5mm.
+// function numLayers(n) {
+//   let thickness = 0.0005;
+//   return `${(thickness * 2 ** n)}m`;
+//   //  n === 0 ? thickness;
+// }
+// console.log(numLayers(5));
+// ===66===
+// Create a function that takes an array of numbers arr, a string str and return an array of numbers as per the following rules:
+
+// "Asc" returns a sorted array in ascending order.
+// "Des" returns a sorted array in descending order.
+// "None" returns an array without any modification.
+
+// function ascDesNone(arr, str) {
+//   if (str === "None") {
+//     return arr;
+//   }
+//   return str === "Asc" ? arr.sort((a, b) => a - b) : arr.sort((a, b) => b - a);
+// }
+// console.log(ascDesNone([4, 3, 2, 1], "Asc"));
+
 // ===65===
 // The Code tab has a code which attempts to add a clone of an array to itself. There is no error message, but the results are not as expected. Can you fix the code?
-function clone(arr) {
-  let newArr = [];
-  arr.map((val) => console.log(newArr.push(val)));
-  return [...arr, newArr];
-}
+// function clone(arr) {
+//   let newArr = [];
+//   arr.map((val) => console.log(newArr.push(val)));
+//   return [...arr, newArr];
+// }
 
-console.log(clone([1, 2, 3]));
-// ===64===
+// console.log(clone([1, 2, 3]));
+// // ===64===
 // An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
 // function isSpecialArray(arr) {
 //   for (let i = 0; i < arr.length; i++)
