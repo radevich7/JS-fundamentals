@@ -1,4 +1,17 @@
 "useStrict";
+// ===68===
+// Create the function that takes an array with objects and returns the sum of people's budgets.
+// function getBudgets(arr) {
+//   return arr.map((person) => person.budget).reduce((prev, acc) => prev + acc);
+// }
+
+// console.log(
+//   getBudgets([
+//     { name: "John", age: 21, budget: 23000 },
+//     { name: "Steve", age: 32, budget: 40000 },
+//     { name: "Martin", age: 16, budget: 2700 },
+//   ])
+// );
 // ===67===
 // Create a function that returns the thickness (in meters) of a piece of paper after folding it n number of times. The paper starts off with a thickness of 0.5mm.
 // function numLayers(n) {
