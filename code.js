@@ -1,4 +1,11 @@
 "useStrict";
+// ===69===
+// Create a function that takes an integer n and reverses it.
+// function rev(n) {
+//   return Math.abs(n).toString().split("").reverse().join("");
+// }
+// console.log(rev(215));
+
 // ===68===
 // Create the function that takes an array with objects and returns the sum of people's budgets.
 // function getBudgets(arr) {
