@@ -1,15 +1,27 @@
 "useStrict";
+// ===71===
+// Fix the greetingMaker() function so that it works with the greeting() function.
+// The greeting() function has already been created (check the Tests tab).
+
+// function greetingMaker(x) {
+//   return function closure(name) {
+//     return x + ", " + name;
+//   };
+// }
+// const greeting = greetingMaker("Hello");
+
+// console.log(greeting("James"));
 // ===70===
 // Mubashir needs your help to find out Increasing and Decreasing numbers for a given range.
 
 // Create a function that takes a number n and returns total occurrences of all the increasing or decreasing numbers in range 10^n.
-function incDec(n) {
-  let b = 1;
-  for (let i = 1; i <= n; ++i) b = (b * (n + 10 - i)) / i;
-  return Math.round((b * n) / 10 + 2 * b - 10 * n - 1);
-}
+// function incDec(n) {
+//   let b = 1;
+//   for (let i = 1; i <= n; ++i) b = (b * (n + 10 - i)) / i;
+//   return Math.round((b * n) / 10 + 2 * b - 10 * n - 1);
+// }
 
-console.log(incDec());
+// console.log(incDec(3));
 // var startTime = performance.now();
 
 // function natural(n) {
