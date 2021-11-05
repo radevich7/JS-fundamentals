@@ -1,4 +1,38 @@
 "useStrict";
+// ===72===
+
+function recordTemps(records, currentWeek) {
+  for (let i = 0; i < currentWeek.length; i++) {
+    if (records[i][0] > currentWeek[i][0]) {
+      records[i][0] = currentWeek[i][0];
+    } else if (records[i][1] < currentWeek[i][1])
+      records[i][1] = currentWeek[i][1];
+  }
+  return records;
+}
+
+console.log(
+  recordTemps(
+    [
+      [34, 82],
+      [24, 82],
+      [20, 89],
+      [5, 88],
+      [9, 88],
+      [26, 89],
+      [27, 83],
+    ],
+    [
+      [44, 72],
+      [19, 70],
+      [40, 69],
+      [39, 68],
+      [33, 64],
+      [36, 70],
+      [38, 69],
+    ]
+  )
+);
 // ===71===
 // Fix the greetingMaker() function so that it works with the greeting() function.
 // The greeting() function has already been created (check the Tests tab).
@@ -11,7 +45,7 @@
 // const greeting = greetingMaker("Hello");
 
 // console.log(greeting("James"));
-// ===70===
+// // ===70===
 // Mubashir needs your help to find out Increasing and Decreasing numbers for a given range.
 
 // Create a function that takes a number n and returns total occurrences of all the increasing or decreasing numbers in range 10^n.
