@@ -2,6 +2,12 @@
 
 // ===75===
 // Sum of Resistance in Parallel Circuits
+// function parallelResistance(arr) {
+//   return +(1 / arr.reduce((acc, curr) => acc + 1 / curr, 0)).toFixed(1);
+// }
+
+// console.log(parallelResistance([10, 20, 10]));
+
 // ===74===
 // Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
 
