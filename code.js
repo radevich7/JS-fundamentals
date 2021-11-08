@@ -1,5 +1,10 @@
 "useStrict";
-
+// ===76===
+// Write a function that takes an integer i and returns an integer with the integer backwards followed by the original integer.
+// function reverseAndNot(i) {
+//   return +(i.toString().split("").reverse().join("") + i.toString());
+// }
+// console.log(reverseAndNot(123));
 // ===75===
 // Sum of Resistance in Parallel Circuits
 // function parallelResistance(arr) {
