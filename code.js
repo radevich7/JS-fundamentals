@@ -1,26 +1,39 @@
 "useStrict";
 
+// ===75===
+// Sum of Resistance in Parallel Circuits
+// ===74===
+// Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
+
+// function matchLastItem(arr) {
+//   let lastElement = arr.slice(-1);
+//   let arrayWithoutLastPiece = arr.filter((val) => val != lastElement);
+//   const sum = arrayWithoutLastPiece.join("");
+//   return sum == lastElement ? true : false;
+// }
+
+// console.log(matchLastItem(["rsq", "6hi", "g", "rsq6hig"]));
 // ===73===
 // Working with multidimensional arrays
 
-function isAdjacent(matrix, node1, node2) {
-  for (let i = 0; i < matrix.length; i++) {
-    // get the size of the inner array
-    let innerArrayLength = matrix[i].length;
-    // loop the inner array
-    for (let j = 0; j < innerArrayLength; j++) {
-      return matrix[node1][node2] === 1 ? true : false;
-    }
-  }
-}
-const matrix1 = [
-  [0, 1, 0, 0],
-  [1, 0, 1, 1],
-  [0, 1, 0, 1],
-  [0, 1, 1, 0],
-];
+// function isAdjacent(matrix, node1, node2) {
+//   for (let i = 0; i < matrix.length; i++) {
+//     // get the size of the inner array
+//     let innerArrayLength = matrix[i].length;
+//     // loop the inner array
+//     for (let j = 0; j < innerArrayLength; j++) {
+//       return matrix[node1][node2] === 1 ? true : false;
+//     }
+//   }
+// }
+// const matrix1 = [
+//   [0, 1, 0, 0],
+//   [1, 0, 1, 1],
+//   [0, 1, 0, 1],
+//   [0, 1, 1, 0],
+// ];
 
-console.log(isAdjacent(matrix1, 0, 2));
+// console.log(isAdjacent(matrix1, 0, 2));
 // ===72===
 
 // function recordTemps(records, currentWeek) {
