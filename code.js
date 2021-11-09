@@ -1,10 +1,31 @@
 "useStrict";
+// ===80===
+// Given a string of numbers separated by a comma and space, return the product of the numbers.
+
+// function multiplyNums(nums) {
+//   return nums
+//     .split(",")
+//     .map(Number)
+//     .reduce((a, b) => a * b);
+// }
+
+// console.log(multiplyNums("54, 75, 453, 0"));
+// ===79===
+
+// function countOnes(i) {
+//   return i
+//     .toString(2)
+//     .split("")
+//     .filter((val) => val == 1).length;
+// }
+// console.log(countOnes(100));
+// Count the amount of ones in the binary representation of an integer. For example, since 12 is 1100 in binary, the return value should be 2.
 // ===78===
 // You can think of character classes as characters with special meaning. They are recognized as special when you place the \ before the character.
 
 // Here are a list of the characters classes in JavaScript:
 
-const REGEXP = /\t /g;
+// const REGEXP = /\t /g;
 // // ===77===
 // Given an array of boxes, create a function that returns the total volume of all those boxes combined together. A box is represented by an array with three elements: length, width and height.
 
