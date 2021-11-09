@@ -1,4 +1,10 @@
 "useStrict";
+// ===78===
+// You can think of character classes as characters with special meaning. They are recognized as special when you place the \ before the character.
+
+// Here are a list of the characters classes in JavaScript:
+
+const REGEXP = /\t /g;
 // // ===77===
 // Given an array of boxes, create a function that returns the total volume of all those boxes combined together. A box is represented by an array with three elements: length, width and height.
 
