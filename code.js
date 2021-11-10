@@ -1,20 +1,20 @@
 "useStrict";
+// ===83===
+// Mary wants to run a 25-mile marathon. When she attempts to sign up for the marathon, she notices the sign-up sheet doesn't directly state the marathon's length. Instead, the marathon's length is listed in small, different portions. Help Mary find out how long the marathon actually is.
+
+// Return true if the marathon is 25 miles long, otherwise, return false.
+function marathonDistance(d) {
+  if (d.length === 0) {
+    return false;
+  }
+  return d.reduce((a, b) => Math.abs(a) + Math.abs(b)) === 25 ? true : false;
+}
+console.log(marathonDistance([9, 7, 6, 5]));
 // ===82===
 // Create a function that returns true if all parameters are truthy, and false otherwise.
-function allTruthy(...args) {}
-const tests = [
-  [[true, true, true], true],
-  [[false], false],
-  [[true], true],
-  [[false, true, true, true, 20], false],
-  [[Infinity, 92347238467.219378, "Hello World"], true],
-  [[Infinity, 92347238467.219378, "Hello World", 0], false],
-  [["", "r", "ra", "rac", "race"], false],
-  [[+"Hi!"], false],
-  [[{}.twice], false],
-  [[true, 32, Number, [][1]], false],
-  [[Boolean, Number, Object, String], true],
-];
+// function allTruthy(...args) {
+//     return args.every(arg => arg)
+// }
 
 // ===81===
 // Mubashir needs your help to count a specific digit in an array.
