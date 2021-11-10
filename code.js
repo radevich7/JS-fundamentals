@@ -1,4 +1,21 @@
 "useStrict";
+// ===82===
+// Create a function that returns true if all parameters are truthy, and false otherwise.
+function allTruthy(...args) {}
+const tests = [
+  [[true, true, true], true],
+  [[false], false],
+  [[true], true],
+  [[false, true, true, true, 20], false],
+  [[Infinity, 92347238467.219378, "Hello World"], true],
+  [[Infinity, 92347238467.219378, "Hello World", 0], false],
+  [["", "r", "ra", "rac", "race"], false],
+  [[+"Hi!"], false],
+  [[{}.twice], false],
+  [[true, 32, Number, [][1]], false],
+  [[Boolean, Number, Object, String], true],
+];
+
 // ===81===
 // Mubashir needs your help to count a specific digit in an array.
 
