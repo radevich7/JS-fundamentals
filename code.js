@@ -1,4 +1,24 @@
 "useStrict";
+// ===81===
+// Mubashir needs your help to count a specific digit in an array.
+
+// You have to create a function that takes two integers n and d and makes an array of squares of all numbers from 0...<= n and returns the count of the digits d in the array.
+// function countDigits(n, d) {
+//   let arr = [];
+//   let regex = /[d]/g;
+//   for (let i = 0; i <= n; i++) {
+//     arr.push(i ** 2);
+//   }
+//   console.log(arr);
+//   let sum = arr
+//     .toString()
+//     .split("")
+//     .filter((val) => val == d);
+
+//   return sum.length;
+// }
+
+// console.log(countDigits(25, 2));
 // ===80===
 // Given a string of numbers separated by a comma and space, return the product of the numbers.
 
