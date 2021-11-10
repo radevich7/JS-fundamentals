@@ -1,15 +1,22 @@
 "useStrict";
+// ===84===
+// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+function sevenBoom(arr) {
+  return arr.toString().includes("7") ? "Boom!" : "there is no 7 in the array";
+}
+
+console.log(sevenBoom([2, 6, 8, 97, 3]));
 // ===83===
 // Mary wants to run a 25-mile marathon. When she attempts to sign up for the marathon, she notices the sign-up sheet doesn't directly state the marathon's length. Instead, the marathon's length is listed in small, different portions. Help Mary find out how long the marathon actually is.
 
 // Return true if the marathon is 25 miles long, otherwise, return false.
-function marathonDistance(d) {
-  if (d.length === 0) {
-    return false;
-  }
-  return d.reduce((a, b) => Math.abs(a) + Math.abs(b)) === 25 ? true : false;
-}
-console.log(marathonDistance([9, 7, 6, 5]));
+// function marathonDistance(d) {
+//   if (d.length === 0) {
+//     return false;
+//   }
+//   return d.reduce((a, b) => Math.abs(a) + Math.abs(b)) === 25 ? true : false;
+// }
+// console.log(marathonDistance([9, 7, 6, 5]));
 // ===82===
 // Create a function that returns true if all parameters are truthy, and false otherwise.
 // function allTruthy(...args) {
