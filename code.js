@@ -1,5 +1,17 @@
 "useStrict";
-// ===86===
+// ===87===
+// You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
+
+// function assignPersonToJob(names, jobs) {
+//   let obj = {};
+//   names.forEach((key, i) => (obj[key] = jobs[i]));
+//   return obj;
+// }
+// names1 = ["Annie", "Steven", "Lisa", "Osman"];
+// jobs1 = ["Teacher", "Engineer", "Doctor", "Cashier"];
+
+// console.log(assignPersonToJob(names1, jobs1));
+// // ===86===
 // A boomerang is a V-shaped sequence that is either upright or upside down. Specifically, a boomerang can be defined as: sub-array of length 3, with the first and last digits being the same and the middle digit being different.
 // function countBoomerangs(arr) {
 //   let count = 0;
