@@ -1,4 +1,11 @@
 "useStrict";
+// ===88===
+// Calculate the distance between two points in 2D
+// function lineLength([x1, y1], [x2, y2]) {
+//   return +Math.hypot(x2 - x1, y2 - y1).toFixed(2);
+// }
+// console.log(lineLength([15, 7], [22, 11]));
+
 // ===87===
 // You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
 
