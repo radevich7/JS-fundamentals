@@ -1,11 +1,17 @@
 "useStrict";
-// ===84===
-// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
-function sevenBoom(arr) {
-  return arr.toString().includes("7") ? "Boom!" : "there is no 7 in the array";
+// ===85===
+function towerHanoi(discs) {
+  return Math.pow(2, discs) - 1;
 }
 
-console.log(sevenBoom([2, 6, 8, 97, 3]));
+console.log(towerHanoi(3));
+// ===84===
+// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+// function sevenBoom(arr) {
+//   return arr.toString().includes("7") ? "Boom!" : "there is no 7 in the array";
+// }
+
+// console.log(sevenBoom([2, 6, 8, 97, 3]));
 // ===83===
 // Mary wants to run a 25-mile marathon. When she attempts to sign up for the marathon, she notices the sign-up sheet doesn't directly state the marathon's length. Instead, the marathon's length is listed in small, different portions. Help Mary find out how long the marathon actually is.
 
