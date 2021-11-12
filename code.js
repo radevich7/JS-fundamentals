@@ -1,10 +1,23 @@
 "useStrict";
-// ===85===
-function towerHanoi(discs) {
-  return Math.pow(2, discs) - 1;
-}
+// ===86===
+// A boomerang is a V-shaped sequence that is either upright or upside down. Specifically, a boomerang can be defined as: sub-array of length 3, with the first and last digits being the same and the middle digit being different.
+// function countBoomerangs(arr) {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== arr[i + 1] && arr[i] === arr[i + 2]) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
-console.log(towerHanoi(3));
+// console.log(countBoomerangs([9, 5, 9, 5, 1, 1, 1]));
+// ===85===
+// function towerHanoi(discs) {
+//   return Math.pow(2, discs) - 1;
+// }
+
+// console.log(towerHanoi(3));
 // ===84===
 // Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
 // function sevenBoom(arr) {
