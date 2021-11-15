@@ -1,12 +1,24 @@
 "useStrict";
-
+// ===92===
+// To train for an upcoming marathon, Johnny goes on one long-distance run each Saturday. He wants to track how often the number of miles he runs this Saturday exceeds the number of miles run the previous Saturday. This is called a progress day.
+function progressDays(runs) {
+  let progress = [];
+  for (let i = 0; i < runs.length; i++) {
+    if (runs[i] < runs[i + 1]) {
+      progress.push("yes");
+    }
+  }
+  return progress.length;
+}
+console.log(progressDays([10, 11, 12, 9, 10]));
+// Create a function that takes in an array of miles run every Saturday and returns Johnny's total number of progress days.
 // ===91===
 // A factor chain is an array where each previous element is a factor of the next consecutive element. The following is a factor chain:
-function factorChain(arr) {
-  return arr.every((val) => Number.isInteger(+arr.pop(-1) / val));
-}
+// function factorChain(arr) {
+//   return arr.every((val) => Number.isInteger(+arr.pop(-1) / val));
+// }
 
-console.log(factorChain([1, 2, 4, 8, 16, 32]));
+// console.log(factorChain([1, 2, 4, 8, 16, 32]));
 // ===90===
 // Given a square matrix (i.e. same number of rows as columns), its trace is the sum of the entries in the main diagonal (i.e. the diagonal line from the top left to the bottom right).
 // function trace(arr) {
