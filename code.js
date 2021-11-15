@@ -1,4 +1,11 @@
 "useStrict";
+// ===89===
+// Create a function that returns "even" if a number has an even number of factors and "odd" if a number has an odd number of factors.
+function factorGroup(num) {
+  return Number.isInteger(Math.sqrt(num)) ? "odd" : "even";
+}
+
+console.log(factorGroup(36));
 // ===88===
 // Calculate the distance between two points in 2D
 // function lineLength([x1, y1], [x2, y2]) {
