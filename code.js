@@ -1,11 +1,28 @@
 "useStrict";
-// ===89===
-// Create a function that returns "even" if a number has an even number of factors and "odd" if a number has an odd number of factors.
-function factorGroup(num) {
-  return Number.isInteger(Math.sqrt(num)) ? "odd" : "even";
+// ===90===
+// Given a square matrix (i.e. same number of rows as columns), its trace is the sum of the entries in the main diagonal (i.e. the diagonal line from the top left to the bottom right).
+function trace(arr) {
+  if (arr.length === 1) {
+    return +arr[0];
+  }
+
+  return arr.map((val, index) => val[index]).reduce((prev, cur) => prev + cur);
 }
 
-console.log(factorGroup(36));
+console.log(
+  trace([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ])
+);
+// ===89===
+// Create a function that returns "even" if a number has an even number of factors and "odd" if a number has an odd number of factors.
+// function factorGroup(num) {
+//   return Number.isInteger(Math.sqrt(num)) ? "odd" : "even";
+// }
+
+// console.log(factorGroup(36));
 // ===88===
 // Calculate the distance between two points in 2D
 // function lineLength([x1, y1], [x2, y2]) {
