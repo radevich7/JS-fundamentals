@@ -1,21 +1,29 @@
 "useStrict";
-// ===90===
-// Given a square matrix (i.e. same number of rows as columns), its trace is the sum of the entries in the main diagonal (i.e. the diagonal line from the top left to the bottom right).
-function trace(arr) {
-  if (arr.length === 1) {
-    return +arr[0];
-  }
 
-  return arr.map((val, index) => val[index]).reduce((prev, cur) => prev + cur);
+// ===91===
+// A factor chain is an array where each previous element is a factor of the next consecutive element. The following is a factor chain:
+function factorChain(arr) {
+  return arr.every((val) => Number.isInteger(+arr.pop(-1) / val));
 }
 
-console.log(
-  trace([
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-  ])
-);
+console.log(factorChain([1, 2, 4, 8, 16, 32]));
+// ===90===
+// Given a square matrix (i.e. same number of rows as columns), its trace is the sum of the entries in the main diagonal (i.e. the diagonal line from the top left to the bottom right).
+// function trace(arr) {
+//   if (arr.length === 1) {
+//     return +arr[0];
+//   }
+
+//   return arr.map((val, index) => val[index]).reduce((prev, cur) => prev + cur);
+// }
+
+// console.log(
+//   trace([
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+//   ])
+// );
 // ===89===
 // Create a function that returns "even" if a number has an even number of factors and "odd" if a number has an odd number of factors.
 // function factorGroup(num) {
