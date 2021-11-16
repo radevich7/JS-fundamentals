@@ -1,12 +1,24 @@
 "useStrict";
+// ===95===
+// Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array. Create a function that takes an array and returns the sum of all numbers in the array.
+function numbersSum(arr) {
+  let arr1 = [];
+  arr.forEach((val) => {
+    if (typeof val === "number") {
+      arr1.push(val);
+    }
+  });
 
+  return arr1.length === 0 ? 0 : arr1.reduce((a, b) => a + b);
+}
+console.log(numbersSum([1, 2, "13", "4", "645"]));
 // ===94===
 // Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
-function missingNum(arr) {
-  return 55 - arr.reduce((prev, cur) => prev + cur);
-}
+// function missingNum(arr) {
+//   return 55 - arr.reduce((prev, cur) => prev + cur);
+// }
 
-console.log(missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+// console.log(missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
 
 // ===93===
 // Create a function that returns the mean of all digits.
