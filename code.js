@@ -1,16 +1,25 @@
 "useStrict";
+
+// ===94===
+// Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
+function missingNum(arr) {
+  return 55 - arr.reduce((prev, cur) => prev + cur);
+}
+
+console.log(missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
+
 // ===93===
 // Create a function that returns the mean of all digits.
-function mean(num) {
-  let arr = num.toString();
-  let sum = arr
-    .split("")
-    .map((val) => +val)
-    .reduce((prev, cur) => prev + cur);
-  console.log(arr);
-  return sum / arr.length;
-}
-console.log(mean(666));
+// function mean(num) {
+//   let arr = num.toString();
+//   let sum = arr
+//     .split("")
+//     .map((val) => +val)
+//     .reduce((prev, cur) => prev + cur);
+//   console.log(arr);
+//   return sum / arr.length;
+// }
+// console.log(mean(666));
 
 // ===92===
 // To train for an upcoming marathon, Johnny goes on one long-distance run each Saturday. He wants to track how often the number of miles he runs this Saturday exceeds the number of miles run the previous Saturday. This is called a progress day.
