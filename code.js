@@ -1,17 +1,23 @@
 "useStrict";
+// ===96===
+// Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).
+function removeDups(arr) {
+  return Array.from(new Set(arr));
+}
+console.log(removeDups(["John", "Taylor", "John"]));
 // ===95===
 // Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array. Create a function that takes an array and returns the sum of all numbers in the array.
-function numbersSum(arr) {
-  let arr1 = [];
-  arr.forEach((val) => {
-    if (typeof val === "number") {
-      arr1.push(val);
-    }
-  });
+// function numbersSum(arr) {
+//   let arr1 = [];
+//   arr.forEach((val) => {
+//     if (typeof val === "number") {
+//       arr1.push(val);
+//     }
+//   });
 
-  return arr1.length === 0 ? 0 : arr1.reduce((a, b) => a + b);
-}
-console.log(numbersSum([1, 2, "13", "4", "645"]));
+//   return arr1.length === 0 ? 0 : arr1.reduce((a, b) => a + b);
+// }
+// console.log(numbersSum([1, 2, "13", "4", "645"]));
 // ===94===
 // Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
 // function missingNum(arr) {
