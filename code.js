@@ -1,16 +1,29 @@
 "useStrict";
+// ===93===
+// Create a function that returns the mean of all digits.
+function mean(num) {
+  let arr = num.toString();
+  let sum = arr
+    .split("")
+    .map((val) => +val)
+    .reduce((prev, cur) => prev + cur);
+  console.log(arr);
+  return sum / arr.length;
+}
+console.log(mean(666));
+
 // ===92===
 // To train for an upcoming marathon, Johnny goes on one long-distance run each Saturday. He wants to track how often the number of miles he runs this Saturday exceeds the number of miles run the previous Saturday. This is called a progress day.
-function progressDays(runs) {
-  let progress = [];
-  for (let i = 0; i < runs.length; i++) {
-    if (runs[i] < runs[i + 1]) {
-      progress.push("yes");
-    }
-  }
-  return progress.length;
-}
-console.log(progressDays([10, 11, 12, 9, 10]));
+// function progressDays(runs) {
+//   let progress = [];
+//   for (let i = 0; i < runs.length; i++) {
+//     if (runs[i] < runs[i + 1]) {
+//       progress.push("yes");
+//     }
+//   }
+//   return progress.length;
+// }
+// console.log(progressDays([10, 11, 12, 9, 10]));
 // Create a function that takes in an array of miles run every Saturday and returns Johnny's total number of progress days.
 // ===91===
 // A factor chain is an array where each previous element is a factor of the next consecutive element. The following is a factor chain:
