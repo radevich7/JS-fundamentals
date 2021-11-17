@@ -1,14 +1,31 @@
 "useStrict";
+// ===100===
+// Create a function that takes a string, checks if it has the same number of x's and o's and returns either true or false.
+
+// Return a boolean value (true or false).
+// Return true if the amount of x's and o's are the same.
+// Return false if they aren't the same amount.
+// The string can contain any character.
+// When "x" and "o" are not in the string, return true.
+
+function XO(str) {
+  let arr = str.toLowerCase().split("");
+  let o = arr.filter((x) => x === "o").length;
+  let x = arr.filter((x) => x === "x").length;
+  return x === o;
+}
+console.log(XO("ooxx"));
+
 // ===99===
 // Create a function that validates whether three given integers form a Pythagorean triplet. The sum of the squares of the two smallest integers must equal the square of the largest number to be validated.
-function isTriplet(n1, n2, n3) {
-  let array = [n1, n2, n3].sort((a, b) => a - b);
-  // console.log(Math.pow(array[0], 2));
-  return Math.pow(array[0], 2) + Math.pow(array[1], 2) === Math.pow(array[2], 2)
-    ? true
-    : false;
-}
-console.log(isTriplet(1, 2, 3));
+// function isTriplet(n1, n2, n3) {
+//   let array = [n1, n2, n3].sort((a, b) => a - b);
+//   // console.log(Math.pow(array[0], 2));
+//   return Math.pow(array[0], 2) + Math.pow(array[1], 2) === Math.pow(array[2], 2)
+//     ? true
+//     : false;
+// }
+// console.log(isTriplet(1, 2, 3));
 
 // ===98===
 // Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
