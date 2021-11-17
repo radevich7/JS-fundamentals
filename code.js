@@ -1,10 +1,21 @@
 "useStrict";
+
+// ===98===
+// Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
+function makeTitle(str) {
+  return str
+    .split(" ")
+    .map((val) => val.slice(0, 1).toUpperCase() + val.slice(1))
+    .join(" ");
+}
+console.log(makeTitle("I am a title"));
+
 // ===97===
 // Create a function which counts how many lone 1s appear in a given number. Lone means the number doesn't appear twice or more in a row.
-function countLoneOnes(n) {
-  return ((n + "").match(/(?<!1)1(?!1)/g) || []).length;
-}
-console.log(countLoneOnes(101));
+// function countLoneOnes(n) {
+//   return ((n + "").match(/(?<!1)1(?!1)/g) || []).length;
+// }
+// console.log(countLoneOnes(101));
 
 // ===96===
 // Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).
