@@ -1,14 +1,24 @@
 "useStrict";
+// ===99===
+// Create a function that validates whether three given integers form a Pythagorean triplet. The sum of the squares of the two smallest integers must equal the square of the largest number to be validated.
+function isTriplet(n1, n2, n3) {
+  let array = [n1, n2, n3].sort((a, b) => a - b);
+  // console.log(Math.pow(array[0], 2));
+  return Math.pow(array[0], 2) + Math.pow(array[1], 2) === Math.pow(array[2], 2)
+    ? true
+    : false;
+}
+console.log(isTriplet(1, 2, 3));
 
 // ===98===
 // Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
-function makeTitle(str) {
-  return str
-    .split(" ")
-    .map((val) => val.slice(0, 1).toUpperCase() + val.slice(1))
-    .join(" ");
-}
-console.log(makeTitle("I am a title"));
+// function makeTitle(str) {
+//   return str
+//     .split(" ")
+//     .map((val) => val.slice(0, 1).toUpperCase() + val.slice(1))
+//     .join(" ");
+// }
+// console.log(makeTitle("I am a title"));
 
 // ===97===
 // Create a function which counts how many lone 1s appear in a given number. Lone means the number doesn't appear twice or more in a row.
