@@ -1,4 +1,18 @@
 "useStrict";
+// ===101===
+// Given radius r and height h (in cm), calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything. The desired output should be given in kg and rounded to two decimal places.
+
+// How to solve:
+
+// Calculate the volume of the cylinder.
+// Convert cm³ into dm³.
+// 1dm³ = 1L, 1L is 1Kg.
+
+// function weight(r, h) {
+//   return +(3.14 * r ** 2 * h * 0.001).toFixed(2);
+// }
+// console.log(weight(4, 10));
+
 // ===100===
 // Create a function that takes a string, checks if it has the same number of x's and o's and returns either true or false.
 
@@ -8,13 +22,13 @@
 // The string can contain any character.
 // When "x" and "o" are not in the string, return true.
 
-function XO(str) {
-  let arr = str.toLowerCase().split("");
-  let o = arr.filter((x) => x === "o").length;
-  let x = arr.filter((x) => x === "x").length;
-  return x === o;
-}
-console.log(XO("ooxx"));
+// function XO(str) {
+//   let arr = str.toLowerCase().split("");
+//   let o = arr.filter((x) => x === "o").length;
+//   let x = arr.filter((x) => x === "x").length;
+//   return x === o;
+// }
+// console.log(XO("ooxx"));
 
 // ===99===
 // Create a function that validates whether three given integers form a Pythagorean triplet. The sum of the squares of the two smallest integers must equal the square of the largest number to be validated.
