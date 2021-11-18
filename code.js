@@ -1,11 +1,19 @@
 "useStrict";
+// ===104===
+// Create a function that takes an array of names and returns an array where only the first letter of each name is capitalized.
+// function capMe(arr) {
+//   return arr.map(
+//     (val) => val.slice(0, 1).toUpperCase() + val.slice(1).toLowerCase()
+//   );
+// }
+// console.log(capMe(["mavis", "senaida", "letty"]));
 // ===103===
 // Create a function that takes three integer arguments (a, b, c) and returns the amount of integers which are of equal value.
-function equal(a, b, c) {
-  const size = new Set([a, b, c]).size;
-  return size === 3 ? 0 : 4 - size;
-}
-console.log(equal(7, 3, 7));
+// function equal(a, b, c) {
+//   const size = new Set([a, b, c]).size;
+//   return size === 3 ? 0 : 4 - size;
+// }
+// console.log(equal(7, 3, 7));
 // ===102===
 // Create a function that returns true if an asterisk * is inside a box.
 // function inBox(arr) {
