@@ -1,4 +1,15 @@
 "useStrict";
+// ===105===
+// Write a function that reverses all the words in a sentence that start with a particular letter.
+function specialReverse(s, c) {
+  return s
+    .split(" ")
+    .map((val) => (val.startsWith(c) ? val.split("").reverse().join("") : val))
+    .join(" ");
+}
+
+console.log(specialReverse("word searches are super fun", "s"));
+
 // ===104===
 // Create a function that takes an array of names and returns an array where only the first letter of each name is capitalized.
 // function capMe(arr) {
