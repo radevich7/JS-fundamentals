@@ -1,4 +1,11 @@
 "useStrict";
+// ===102===
+// Create a function that returns true if an asterisk * is inside a box.
+// function inBox(arr) {
+//   return arr.map((val) => val.includes("*") === true).includes(true);
+// }
+// console.log(inBox(["###", "# #", "###"]));
+
 // ===101===
 // Given radius r and height h (in cm), calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything. The desired output should be given in kg and rounded to two decimal places.
 
