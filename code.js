@@ -1,14 +1,30 @@
 "useStrict";
+
+// ===106===
+// Write a function that divides an array into chunks of size n, where n is the length of each chunk.
+
+function chunkify(arr, size) {
+  let result = [];
+  if (size === 1) {
+    return arr.map((val) => [val]);
+  }
+  let arrayCopy = arr;
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arrayCopy.splice(0, size));
+  }
+  return arrayCopy.length > 0 ? [...result, arrayCopy] : [...result];
+}
+console.log(chunkify([2, 3, 4, 5, 6, 7], 1));
 // ===105===
 // Write a function that reverses all the words in a sentence that start with a particular letter.
-function specialReverse(s, c) {
-  return s
-    .split(" ")
-    .map((val) => (val.startsWith(c) ? val.split("").reverse().join("") : val))
-    .join(" ");
-}
+// function specialReverse(s, c) {
+//   return s
+//     .split(" ")
+//     .map((val) => (val.startsWith(c) ? val.split("").reverse().join("") : val))
+//     .join(" ");
+// }
 
-console.log(specialReverse("word searches are super fun", "s"));
+// console.log(specialReverse("word searches are super fun", "s"));
 
 // ===104===
 // Create a function that takes an array of names and returns an array where only the first letter of each name is capitalized.
