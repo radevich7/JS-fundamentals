@@ -1,20 +1,32 @@
 "useStrict";
+// ===107===
+// Create a function that will remove the letters "a", "b" and "c" from the given string and return the modified version. If the given string does not contain "a", "b", or "c", return null.
+
+function removeABC(str) {
+  if (str.match(/[a,b,c]/g)) {
+    return str.replace(/[a,b,c]/g, "");
+  } else {
+    return null;
+  }
+}
+
+console.log(removeABC("This is awesome"));
 
 // ===106===
 // Write a function that divides an array into chunks of size n, where n is the length of each chunk.
 
-function chunkify(arr, size) {
-  let result = [];
-  if (size === 1) {
-    return arr.map((val) => [val]);
-  }
-  let arrayCopy = arr;
-  for (let i = 0; i < arr.length; i++) {
-    result.push(arrayCopy.splice(0, size));
-  }
-  return arrayCopy.length > 0 ? [...result, arrayCopy] : [...result];
-}
-console.log(chunkify([2, 3, 4, 5, 6, 7], 1));
+// function chunkify(arr, size) {
+//   let result = [];
+//   if (size === 1) {
+//     return arr.map((val) => [val]);
+//   }
+//   let arrayCopy = arr;
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(arrayCopy.splice(0, size));
+//   }
+//   return arrayCopy.length > 0 ? [...result, arrayCopy] : [...result];
+// }
+// console.log(chunkify([2, 3, 4, 5, 6, 7], 1));
 // ===105===
 // Write a function that reverses all the words in a sentence that start with a particular letter.
 // function specialReverse(s, c) {
