@@ -1,21 +1,39 @@
 "useStrict";
+// ===110===
+// Create a function that returns true if there's at least one prime number in the given range (n1 to n2 (inclusive)), false otherwise.
+
+function primeInRange(n1, n2) {
+  function isPrime(n) {
+    for (let i = 2; i < n; i++) {
+      if (!(n % i)) return false;
+    }
+    return n > 1;
+  }
+
+  for (let j = n1; j <= n2; j++) {
+    if (isPrime(j)) return true;
+  }
+  return false;
+}
+
+console.log(primeInRange(10, 12));
 
 // ===109===
 // Create a function that takes a single character as an argument and returns the char code of its lowercased / uppercased counterpart.
 
-function counterpartCharCode(char) {
-  // let letter = /^p{L}/.test(char);
-  // if (!letter) {
-  //   return char.charCodeAt(0);
-  // }
-  if (char == char.toUpperCase()) {
-    return char.toLowerCase().charCodeAt(0);
-  } else {
-    return char.toUpperCase().charCodeAt(0);
-  }
-}
+// function counterpartCharCode(char) {
+//   // let letter = /^p{L}/.test(char);
+//   // if (!letter) {
+//   //   return char.charCodeAt(0);
+//   // }
+//   if (char == char.toUpperCase()) {
+//     return char.toLowerCase().charCodeAt(0);
+//   } else {
+//     return char.toUpperCase().charCodeAt(0);
+//   }
+// }
 
-console.log(counterpartCharCode("a"));
+// console.log(counterpartCharCode("a"));
 
 // ===108===
 // You are in charge of the barbecue grill. A vegetarian skewer is a skewer that has only vegetables (-o). A non-vegetarian skewer is a skewer with at least one piece of meat (-x).
