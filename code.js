@@ -1,16 +1,35 @@
 "useStrict";
+// ===108===
+// You are in charge of the barbecue grill. A vegetarian skewer is a skewer that has only vegetables (-o). A non-vegetarian skewer is a skewer with at least one piece of meat (-x).
+
+// For example, the grill below has 4 non-vegetarian skewers and 1 vegetarian skewer (the one in the middle).
+
+function bbqSkewers(grill) {
+  let non = grill.filter((x) => x.includes("x")).length;
+  return [grill.length - non, non];
+}
+
+console.log(
+  bbqSkewers([
+    "--oooo-ooo--",
+    "--xx--x--xx--",
+    "--o---o--oo--",
+    "--xx--x--ox--",
+    "--xx--x--ox--",
+  ])
+);
 // ===107===
 // Create a function that will remove the letters "a", "b" and "c" from the given string and return the modified version. If the given string does not contain "a", "b", or "c", return null.
 
-function removeABC(str) {
-  if (str.match(/[a,b,c]/g)) {
-    return str.replace(/[a,b,c]/g, "");
-  } else {
-    return null;
-  }
-}
+// function removeABC(str) {
+//   if (str.match(/[a,b,c]/g)) {
+//     return str.replace(/[a,b,c]/g, "");
+//   } else {
+//     return null;
+//   }
+// }
 
-console.log(removeABC("This is awesome"));
+// console.log(removeABC("This is awesome"));
 
 // ===106===
 // Write a function that divides an array into chunks of size n, where n is the length of each chunk.
