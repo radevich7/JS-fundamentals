@@ -1,22 +1,37 @@
 "useStrict";
+// ===111===
+// Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version of the string.
+// In order to work properly, the function should replace all "a"s with 4, "e"s with 3, "i"s with 1, "o"s with 0, and "s"s with 5.
+
+function hackerSpeak(str) {
+  const obj = { a: 4, e: 3, i: 1, o: " 0", s: 5 };
+  for (let i = 0; i < str.length; i++) {
+    if (obj[str[i]]) {
+      str = str.replace(str[i], obj[str[i]]);
+    }
+  }
+  return str;
+}
+console.log(hackerSpeak("become a coder"));
+
 // ===110===
 // Create a function that returns true if there's at least one prime number in the given range (n1 to n2 (inclusive)), false otherwise.
 
-function primeInRange(n1, n2) {
-  function isPrime(n) {
-    for (let i = 2; i < n; i++) {
-      if (!(n % i)) return false;
-    }
-    return n > 1;
-  }
+// function primeInRange(n1, n2) {
+//   function isPrime(n) {
+//     for (let i = 2; i < n; i++) {
+//       if (!(n % i)) return false;
+//     }
+//     return n > 1;
+//   }
 
-  for (let j = n1; j <= n2; j++) {
-    if (isPrime(j)) return true;
-  }
-  return false;
-}
+//   for (let j = n1; j <= n2; j++) {
+//     if (isPrime(j)) return true;
+//   }
+//   return false;
+// }
 
-console.log(primeInRange(10, 12));
+// console.log(primeInRange(10, 12));
 
 // ===109===
 // Create a function that takes a single character as an argument and returns the char code of its lowercased / uppercased counterpart.
