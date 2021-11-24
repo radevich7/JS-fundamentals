@@ -1,20 +1,43 @@
 "useStrict";
+// ===114===
+// Write a DECIMATOR function which takes a string and decimates it (i.e. it removes the last 1/10 of the characters).
+
+// Always round up: if the string has 21 characters, 1/10 of the characters would be 2.1 characters, hence the DECIMATOR removes 3 characters. The DECIMATOR shows no mercy!
+
+function DECIMATOR(str) {
+  // Calculate the number of characters
+  // number of characters divide but 1/10 and round up to bigger number
+  if (str.length > 0) {
+    let numberCharacters = Math.ceil(str.split("").length / 10);
+    let a = str.slice(0, -numberCharacters);
+    return a;
+  } else {
+    return "";
+  }
+  // remove the number of characters from the end of the string
+
+  // if the string is empty return empty string
+
+  // else return strng without last characters
+}
+console.log(DECIMATOR("1234567890"));
+
 // ===113===
 // You just returned home to find your mansion has been robbed! Given an object of the stolen items, return the total amount of the burglary (number). If nothing was robbed, return the string "Lucky you!".
-function calculateLosses(obj) {
-  // get all the values from the object
-  //sum them up
-  let values = Object.values(obj);
-  return values.length > 0 ? values.reduce((a, b) => a + b) : "Lucky you";
-}
+// function calculateLosses(obj) {
+//   // get all the values from the object
+//   //sum them up
+//   let values = Object.values(obj);
+//   return values.length > 0 ? values.reduce((a, b) => a + b) : "Lucky you";
+// }
 
-console.log(
-  calculateLosses({
-    tv: 30,
-    skate: 20,
-    stereo: 50,
-  })
-);
+// console.log(
+//   calculateLosses({
+//     tv: 30,
+//     skate: 20,
+//     stereo: 50,
+//   })
+// );
 // ===112===
 // Parity bits are used as very simple checksum to ensure that binary data isn't corrupted during transit. Here's how they work:
 
