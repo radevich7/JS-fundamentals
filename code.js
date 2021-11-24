@@ -1,4 +1,20 @@
 "useStrict";
+// ===113===
+// You just returned home to find your mansion has been robbed! Given an object of the stolen items, return the total amount of the burglary (number). If nothing was robbed, return the string "Lucky you!".
+function calculateLosses(obj) {
+  // get all the values from the object
+  //sum them up
+  let values = Object.values(obj);
+  return values.length > 0 ? values.reduce((a, b) => a + b) : "Lucky you";
+}
+
+console.log(
+  calculateLosses({
+    tv: 30,
+    skate: 20,
+    stereo: 50,
+  })
+);
 // ===112===
 // Parity bits are used as very simple checksum to ensure that binary data isn't corrupted during transit. Here's how they work:
 
@@ -6,29 +22,29 @@
 // If a binary string has an even number of 1's, the parity bit is a 0.
 // The parity bit is appended to the end of the binary string.
 // Create a function that validates whether a binary string is valid, using parity bits.
-function validateBinary(b) {
-  // slice the last number from the string
-  const array = b.split("");
+// function validateBinary(b) {
+//   // slice the last number from the string
+//   const array = b.split("");
 
-  const lastNumber = array.splice(-1);
+//   const lastNumber = array.splice(-1);
 
-  //Check if lastNumber is =0
-  if (lastNumber == 0) {
-    //Count number 1 and if even return true and else false
-    const res = array.filter((val) => val == 1).length;
-    return res % 2 == 0 ? true : false;
-  }
-  //else if lastNumber =1
-  if (lastNumber == 1) {
-    //Cout  number 1 and if odd return true and else false
-    const res = array.filter((val) => val == 1).length;
-    return res % 2 == 0 ? false : true;
-  }
+//   //Check if lastNumber is =0
+//   if (lastNumber == 0) {
+//     //Count number 1 and if even return true and else false
+//     const res = array.filter((val) => val == 1).length;
+//     return res % 2 == 0 ? true : false;
+//   }
+//   //else if lastNumber =1
+//   if (lastNumber == 1) {
+//     //Cout  number 1 and if odd return true and else false
+//     const res = array.filter((val) => val == 1).length;
+//     return res % 2 == 0 ? false : true;
+//   }
 
-  //Cout  number 1 and if odd return true and else false
-}
+//   //Cout  number 1 and if odd return true and else false
+// }
 
-console.log(validateBinary("00101100"));
+// console.log(validateBinary("00101100"));
 
 // ===111===
 // Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version of the string.
