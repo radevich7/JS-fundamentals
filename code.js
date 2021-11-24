@@ -1,26 +1,38 @@
 "useStrict";
+// ===115===
+
+// A man has n number of apples. If he eats a percentage p of the apples (if apples are available), his children will share the remainder of the apples. Create a function to determine the number of whole apples his children got. If his children did not get any apples, return "The children didn't get any apples".
+
+// function getNumberOfApples(n, p) {
+//   // determine the number of whole apples
+//   let wholeApples = Math.floor(n - (n * parseInt(p)) / 100);
+//   return wholeApples > 0 ? wholeApples : "The children didn't get any apples";
+//   // if >0 return number of apples , else return "The children didn't get any apples"
+// }
+// console.log(getNumberOfApples(40, "30%"));
+
 // ===114===
 // Write a DECIMATOR function which takes a string and decimates it (i.e. it removes the last 1/10 of the characters).
 
 // Always round up: if the string has 21 characters, 1/10 of the characters would be 2.1 characters, hence the DECIMATOR removes 3 characters. The DECIMATOR shows no mercy!
 
-function DECIMATOR(str) {
-  // Calculate the number of characters
-  // number of characters divide but 1/10 and round up to bigger number
-  if (str.length > 0) {
-    let numberCharacters = Math.ceil(str.split("").length / 10);
-    let a = str.slice(0, -numberCharacters);
-    return a;
-  } else {
-    return "";
-  }
-  // remove the number of characters from the end of the string
+// function DECIMATOR(str) {
+//   // Calculate the number of characters
+//   // number of characters divide but 1/10 and round up to bigger number
+//   if (str.length > 0) {
+//     let numberCharacters = Math.ceil(str.split("").length / 10);
+//     let a = str.slice(0, -numberCharacters);
+//     return a;
+//   } else {
+//     return "";
+//   }
+//   // remove the number of characters from the end of the string
 
-  // if the string is empty return empty string
+//   // if the string is empty return empty string
 
-  // else return strng without last characters
-}
-console.log(DECIMATOR("1234567890"));
+//   // else return strng without last characters
+// }
+// console.log(DECIMATOR("1234567890"));
 
 // ===113===
 // You just returned home to find your mansion has been robbed! Given an object of the stolen items, return the total amount of the burglary (number). If nothing was robbed, return the string "Lucky you!".
