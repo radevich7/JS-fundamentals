@@ -1,19 +1,33 @@
 "useStrict";
+// Given an array of women and an array of men, either:
+
+// Return "sizes don't match" if the two arrays have different sizes.
+// If the sizes match, return an array of pairs, with the first woman paired with the first man, second woman paired with the second man, etc.
+// ===118===
+// Given an array of numbers, write a function that returns an array that...
+
+// Has all duplicate elements removed.
+// // Is sorted from least to greatest value.
+
+function uniqueSort(arr) {
+  return Array.from(new Set(arr.sort((a, b) => a - b)));
+}
+console.log(uniqueSort([1, 5, 8, 2, 3, 4, 4, 4, 10]));
 
 // ===117===
 // Create a function that takes two vectors as arrays and checks if the two vectors are orthogonal or not. The return value is boolean. Two vectors a and b are orthogonal if their dot product is equal to zero.
-function isOrthogonal(arr1, arr2) {
-  // a · b = ax · bx + ay · by = 0
-  //   let res = [];
-  //   for (let i = 0; i < arr1.length; i++) {
-  //     res.push(arr1[i] * arr2[i]);
-  //   }
-  //   return res.reduce((a, b) => a + b) === 0;
+// function isOrthogonal(arr1, arr2) {
+//   // a · b = ax · bx + ay · by = 0
+//   //   let res = [];
+//   //   for (let i = 0; i < arr1.length; i++) {
+//   //     res.push(arr1[i] * arr2[i]);
+//   //   }
+//   //   return res.reduce((a, b) => a + b) === 0;
 
-  return !arr1.reduce((t, c, i) => t + c * arr2[i], 0);
-}
+//   return !arr1.reduce((t, c, i) => t + c * arr2[i], 0);
+// }
 
-console.log(isOrthogonal([-13, -26], [-8, 4]));
+// console.log(isOrthogonal([-13, -26], [-8, 4]));
 // ===116===
 // Create a function that takes an array of numbers and returns the sum of the two lowest positive numbers.
 // function sumTwoSmallestNums(arr) {
