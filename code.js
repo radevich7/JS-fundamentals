@@ -1,4 +1,24 @@
 "useStrict";
+
+// ===116===
+// Create a function that takes an array of numbers and returns the sum of the two lowest positive numbers.
+function sumTwoSmallestNums(arr) {
+  //   //  filter the array(only positive numbers)
+  //   let filtered = arr.filter((val) => val > 0);
+  //   //sort the array (two lowest numbers will be in the beginning )
+  //   let sorted = filtered.sort((a, b) => a - b);
+  //   console.log(sorted);
+  //   // sum that two numbers
+  //   let res = sorted.slice(0, 2).reduce((prev, cur) => prev + cur);
+  //   console.log(res);
+
+  return arr
+    .filter((val) => val > 0)
+    .sort((a, b) => a - b)
+    .slice(0, 2)
+    .reduce((prev, cur) => prev + cur);
+}
+console.log(sumTwoSmallestNums([19, 5, 42, 2, 77]));
 // ===115===
 
 // A man has n number of apples. If he eats a percentage p of the apples (if apples are available), his children will share the remainder of the apples. Create a function to determine the number of whole apples his children got. If his children did not get any apples, return "The children didn't get any apples".
