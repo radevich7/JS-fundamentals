@@ -1,18 +1,30 @@
 "useStrict";
+// ===119===
 // Given an array of women and an array of men, either:
 
 // Return "sizes don't match" if the two arrays have different sizes.
 // If the sizes match, return an array of pairs, with the first woman paired with the first man, second woman paired with the second man, etc.
+function zipIt(women, men) {
+  //  checking the sizes of the array
+
+  if (women.length !== men.length) {
+    return "sizes don't match";
+  }
+  return women.map((val, index) => [val, men[index]]);
+  // paired two arrays, so [1el 1arr ; 1el 2arr]
+}
+console.log(zipIt(["Elise", "Mary"], ["John", "Rick"]));
+
 // ===118===
 // Given an array of numbers, write a function that returns an array that...
 
 // Has all duplicate elements removed.
 // // Is sorted from least to greatest value.
 
-function uniqueSort(arr) {
-  return Array.from(new Set(arr.sort((a, b) => a - b)));
-}
-console.log(uniqueSort([1, 5, 8, 2, 3, 4, 4, 4, 10]));
+// function uniqueSort(arr) {
+//   return Array.from(new Set(arr.sort((a, b) => a - b)));
+// }
+// console.log(uniqueSort([1, 5, 8, 2, 3, 4, 4, 4, 10]));
 
 // ===117===
 // Create a function that takes two vectors as arrays and checks if the two vectors are orthogonal or not. The return value is boolean. Two vectors a and b are orthogonal if their dot product is equal to zero.
