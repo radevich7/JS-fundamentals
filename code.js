@@ -4,11 +4,13 @@
 // Create a function that takes two vectors as arrays and checks if the two vectors are orthogonal or not. The return value is boolean. Two vectors a and b are orthogonal if their dot product is equal to zero.
 function isOrthogonal(arr1, arr2) {
   // a · b = ax · bx + ay · by = 0
-  let res = [];
-  for (let i = 0; i < arr1.length; i++) {
-    res.push(arr1[i] * arr2[i]);
-  }
-  return res.reduce((a, b) => a + b) === 0;
+  //   let res = [];
+  //   for (let i = 0; i < arr1.length; i++) {
+  //     res.push(arr1[i] * arr2[i]);
+  //   }
+  //   return res.reduce((a, b) => a + b) === 0;
+
+  return !arr1.reduce((t, c, i) => t + c * arr2[i], 0);
 }
 
 console.log(isOrthogonal([-13, -26], [-8, 4]));
