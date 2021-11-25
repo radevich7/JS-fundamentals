@@ -1,25 +1,29 @@
 "useStrict";
 
+// ===117===
+// Create a function that takes two vectors as arrays and checks if the two vectors are orthogonal or not. The return value is boolean. Two vectors a and b are orthogonal if their dot product is equal to zero.
+function isOrthogonal(arr1, arr2) {
+  // a · b = ax · bx + ay · by = 0
+  let res = [];
+  for (let i = 0; i < arr1.length; i++) {
+    res.push(arr1[i] * arr2[i]);
+  }
+  return res.reduce((a, b) => a + b) === 0;
+}
+
+console.log(isOrthogonal([-13, -26], [-8, 4]));
 // ===116===
 // Create a function that takes an array of numbers and returns the sum of the two lowest positive numbers.
-function sumTwoSmallestNums(arr) {
-  //   //  filter the array(only positive numbers)
-  //   let filtered = arr.filter((val) => val > 0);
-  //   //sort the array (two lowest numbers will be in the beginning )
-  //   let sorted = filtered.sort((a, b) => a - b);
-  //   console.log(sorted);
-  //   // sum that two numbers
-  //   let res = sorted.slice(0, 2).reduce((prev, cur) => prev + cur);
-  //   console.log(res);
+// function sumTwoSmallestNums(arr) {
 
-  return arr
-    .filter((val) => val > 0)
-    .sort((a, b) => a - b)
-    .slice(0, 2)
-    .reduce((prev, cur) => prev + cur);
-}
-console.log(sumTwoSmallestNums([19, 5, 42, 2, 77]));
-// ===115===
+//   return arr
+//     .filter((val) => val > 0)
+//     .sort((a, b) => a - b)
+//     .slice(0, 2)
+//     .reduce((prev, cur) => prev + cur);
+// }
+// console.log(sumTwoSmallestNums([19, 5, 42, 2, 77]));
+// // ===115===
 
 // A man has n number of apples. If he eats a percentage p of the apples (if apples are available), his children will share the remainder of the apples. Create a function to determine the number of whole apples his children got. If his children did not get any apples, return "The children didn't get any apples".
 
