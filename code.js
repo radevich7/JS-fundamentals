@@ -1,4 +1,15 @@
 "useStrict";
+// ===122===
+// Create a function that takes an array of integers and returns the sum of all the integers that have an even index, multiplied by the integer at the last index.
+
+function evenLast(arr) {
+  return arr.length > 0
+    ? arr.filter((val, index) => index % 2 === 0).reduce((a, b) => a + b) *
+        arr.slice(-1)
+    : 0;
+}
+console.log(evenLast([1, 3, 3, 1, 10]));
+
 // ===121===
 // Given an int, figure out how many ones, threes and nines you could fit into the number. You must create a class. You will make variables (class.ones, class.threes, class.nines) to do this.
 
