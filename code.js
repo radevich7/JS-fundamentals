@@ -1,25 +1,37 @@
 "useStrict";
+// ===121===
+// Given an int, figure out how many ones, threes and nines you could fit into the number. You must create a class. You will make variables (class.ones, class.threes, class.nines) to do this.
+
+// class fittesIn {
+//   constructor(number) {
+//     this.ones = ~~(number / 1);
+//     this.threes = ~~(number / 3);
+//     this.nines = ~~(number / 9);
+//   }
+// }
+// let n = new fittesIn(5);
+// console.log(n);
 
 // ===120===
 // Create a function that takes a string and returns the middle character(s). If the word's length is odd, return the middle character. If the word's length is even, return the middle two characters.
 
-function getMiddle(str) {
-  // Determine the length of the word
-  let length = str.length;
+// function getMiddle(str) {
+//   // Determine the length of the word
+//   let length = str.length;
 
-  if (length % 2 === 0) {
-    // if the word length is even => middle two characters
-    let range1 = length / 2 - 1;
-    let range2 = length / 2 + 1;
-    return str.slice(range1, range2);
-  } else {
-    // if the word length is odd => middle character
-    let range1 = length / 2;
-    let range2 = length / 2 + 1;
-    return str.slice(range1, range2);
-  }
-}
-console.log(getMiddle("tesst"));
+//   if (length % 2 === 0) {
+//     // if the word length is even => middle two characters
+//     let range1 = length / 2 - 1;
+//     let range2 = length / 2 + 1;
+//     return str.slice(range1, range2);
+//   } else {
+//     // if the word length is odd => middle character
+//     let range1 = length / 2;
+//     let range2 = length / 2 + 1;
+//     return str.slice(range1, range2);
+//   }
+// }
+// console.log(getMiddle("test"));
 
 // ===119===
 // Given an array of women and an array of men, either:
