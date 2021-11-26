@@ -1,10 +1,21 @@
 "useStrict";
+// ===124===
+// Create a function that takes a number and returns an array with the digits of the number in reverse order.
+// function reverseArr(num) {
+//   return num
+//     .toString()
+//     .split("")
+//     .reverse()
+//     .map((val) => +val);
+// }
+
+// console.log(reverseArr(1485979));
 // ===123===
 // Create a function that takes the volume of a cube and returns the length of the cube's main diagonal, rounded to two decimal places.
-function cubeDiagonal(volume) {
-  return Math.round(Math.cbrt(volume) * Math.sqrt(3) * 100) / 100;
-}
-console.log(cubeDiagonal(8));
+// function cubeDiagonal(volume) {
+//   return Math.round(Math.cbrt(volume) * Math.sqrt(3) * 100) / 100;
+// }
+// console.log(cubeDiagonal(8));
 
 // ===122===
 // Create a function that takes an array of integers and returns the sum of all the integers that have an even index, multiplied by the integer at the last index.
