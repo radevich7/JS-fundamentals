@@ -1,19 +1,41 @@
 "useStrict";
+
+// ===120===
+// Create a function that takes a string and returns the middle character(s). If the word's length is odd, return the middle character. If the word's length is even, return the middle two characters.
+
+function getMiddle(str) {
+  // Determine the length of the word
+  let length = str.length;
+
+  if (length % 2 === 0) {
+    // if the word length is even => middle two characters
+    let range1 = length / 2 - 1;
+    let range2 = length / 2 + 1;
+    return str.slice(range1, range2);
+  } else {
+    // if the word length is odd => middle character
+    let range1 = length / 2;
+    let range2 = length / 2 + 1;
+    return str.slice(range1, range2);
+  }
+}
+console.log(getMiddle("tesst"));
+
 // ===119===
 // Given an array of women and an array of men, either:
 
 // Return "sizes don't match" if the two arrays have different sizes.
 // If the sizes match, return an array of pairs, with the first woman paired with the first man, second woman paired with the second man, etc.
-function zipIt(women, men) {
-  //  checking the sizes of the array
+// function zipIt(women, men) {
+//   //  checking the sizes of the array
 
-  if (women.length !== men.length) {
-    return "sizes don't match";
-  }
-  return women.map((val, index) => [val, men[index]]);
-  // paired two arrays, so [1el 1arr ; 1el 2arr]
-}
-console.log(zipIt(["Elise", "Mary"], ["John", "Rick"]));
+//   if (women.length !== men.length) {
+//     return "sizes don't match";
+//   }
+//   return women.map((val, index) => [val, men[index]]);
+//   // paired two arrays, so [1el 1arr ; 1el 2arr]
+// }
+// console.log(zipIt(["Elise", "Mary"], ["John", "Rick"]));
 
 // ===118===
 // Given an array of numbers, write a function that returns an array that...
