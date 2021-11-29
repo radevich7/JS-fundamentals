@@ -1,4 +1,21 @@
 "useStrict";
+// ===125===
+// Create a function that takes a number as its argument and returns an array of all its factors.
+function factorize(num) {
+  //  loop over and get numbers
+  let arr = [];
+  for (let i = 0; i <= num; i++) {
+    if (num % i === 0) {
+      arr.push(i);
+    }
+  }
+  return arr;
+
+  //push them into the array
+}
+
+console.log(factorize(12));
+
 // ===124===
 // Create a function that takes a number and returns an array with the digits of the number in reverse order.
 // function reverseArr(num) {
