@@ -1,4 +1,15 @@
 "useStrict";
+// ===127===
+// Create a function to find NaN in an array of numbers. The return value should be the index where NaN is found. If NaN is not found in the array, then return -1.
+function findNaN(number) {
+  //  check if the array includes NaN
+  return number.findIndex(Number.isNaN);
+  // if true, return indexOf NaN
+  // else , return -1
+}
+
+console.log(findNaN([1, 2, 3]));
+
 // ===126===
 // Create a function that returns a capitalized version of the string passed. The first letter of each word in the string should be capitalized while the rest of each word should be lowercase.
 // function emphasise(str) {
