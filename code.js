@@ -1,20 +1,36 @@
 "useStrict";
+// ===126===
+// Create a function that returns a capitalized version of the string passed. The first letter of each word in the string should be capitalized while the rest of each word should be lowercase.
+// function emphasise(str) {
+//   // split the string
+
+//   return str
+//     .split(" ")
+//     .map(
+//       (val) =>
+//         val.substring(0, 1).toUpperCase() + val.substring(1).toLowerCase()
+//     )
+//     .join(" ");
+//   // check if the first character is a letter
+//   // first character to uppercase and the rest to lower
+// }
+// console.log(emphasise("hello world"));
 // ===125===
 // Create a function that takes a number as its argument and returns an array of all its factors.
-function factorize(num) {
-  //  loop over and get numbers
-  let arr = [];
-  for (let i = 0; i <= num; i++) {
-    if (num % i === 0) {
-      arr.push(i);
-    }
-  }
-  return arr;
+// function factorize(num) {
+//   //  loop over and get numbers
+//   let arr = [];
+//   for (let i = 0; i <= num; i++) {
+//     if (num % i === 0) {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
 
-  //push them into the array
-}
+//   //push them into the array
+// }
 
-console.log(factorize(12));
+// console.log(factorize(12));
 
 // ===124===
 // Create a function that takes a number and returns an array with the digits of the number in reverse order.
