@@ -1,19 +1,55 @@
 "useStrict";
+// ===131===
+// Given a number, n, return a function which adds n to the number passed to it.
+function add(n) {
+  let num = n;
+  return function add(n) {
+    return num + n;
+  };
+}
+console.log(add(20)(10));
+
+// ===130===
+// Create a function to check whether the given parameter is an Object or not.
+
+// function isObject(value) {
+//   console.log(typeof value);
+//   if (value === null) {
+//     return false;
+//   }
+//   return typeof value !== "object" ? false : true;
+// }
+// console.log(isObject(null));
+// ===129===
+// An isogram is a word that has no duplicate letters. Create a function that takes a string and returns either true or false depending on whether or not it's an "isogram".
+
+// function isIsogram(str) {
+//   // split string into array
+
+//   // check if the value includes in the string more than once
+
+//   let filtered = new Set(str.toLowerCase().split(""));
+//   return filtered.size !== str.length ? false : true;
+//   // return true  if its a unique
+//   // return false if there is a match more than one
+// }
+
+// console.log(isIsogram("Algorism"));
 // ===128===
 // Create a function that takes three arguments a, b, c and returns the sum of the numbers that are evenly divided by c from the range a, b inclusive.
 
-function evenlyDivisible(a, b, c) {
-  let arr = [];
-  let i = a;
-  while (i <= b) {
-    if (i % c == 0) {
-      arr.push(i);
-    }
-    i++;
-  }
-  return arr.length > 0 ? arr.reduce((prev, cur) => prev + cur) : 0;
-}
-console.log(evenlyDivisible(1, 10, 2));
+// function evenlyDivisible(a, b, c) {
+//   let arr = [];
+//   let i = a;
+//   while (i <= b) {
+//     if (i % c == 0) {
+//       arr.push(i);
+//     }
+//     i++;
+//   }
+//   return arr.length > 0 ? arr.reduce((prev, cur) => prev + cur) : 0;
+// }
+// console.log(evenlyDivisible(1, 10, 2));
 
 // ===127===
 // Create a function to find NaN in an array of numbers. The return value should be the index where NaN is found. If NaN is not found in the array, then return -1.
