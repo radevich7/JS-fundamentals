@@ -1,13 +1,28 @@
 "useStrict";
 // ===131===
+// A number is said to be Harshad if it's exactly divisible by the sum of its digits. Create a function that determines whether a number is a Harshad or not.
+
+// function isHarshad(n) {
+//   //number => string=> split => number => add them up
+//   let number = n
+//     .toString()
+//     .split("")
+//     .reduce((prev, cur) => +prev + +cur);
+//   // check if the n divisible by result
+//   return n % number === 0 ? true : false;
+// }
+
+// console.log(isHarshad(171));
+
+// ===131===
 // Given a number, n, return a function which adds n to the number passed to it.
-function add(n) {
-  let num = n;
-  return function add(n) {
-    return num + n;
-  };
-}
-console.log(add(20)(10));
+// function add(n) {
+//   let num = n;
+//   return function add(n) {
+//     return num + n;
+//   };
+// }
+// console.log(add(20)(10));
 
 // ===130===
 // Create a function to check whether the given parameter is an Object or not.
