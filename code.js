@@ -1,19 +1,40 @@
 "useStrict";
+// ===133===
+// Create a function that always returns true for every item in a given array. However, if an element is the word "flick", switch to always returning the opposite boolean value.
+
+function flickSwitch(arr) {
+  if (arr.length === 0) {
+    return arr;
+  }
+
+  let array = [];
+  let res = true;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== "flick") {
+      array.push(res);
+    } else {
+      res = !res;
+      array.push(res);
+    }
+  }
+  return array;
+}
+console.log(flickSwitch([false, false, "flick", "sheep", "flick"]));
 // ===132===
 // Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:
 
 // When positives and positives interact, they remain positive.
 // When negatives and negatives interact, they remain negative.
 // But when negatives and positives interact, they become neutral, and are shown as the number 0.
-function neutralise(s1, s2) {
-  return s1
-    .split("")
-    .map((val, index) => {
-      return val == s2[index] ? val : 0;
-    })
-    .join("");
-}
-console.log(neutralise("-+-+-+", "-+-+-+"));
+// function neutralise(s1, s2) {
+//   return s1
+//     .split("")
+//     .map((val, index) => {
+//       return val == s2[index] ? val : 0;
+//     })
+//     .join("");
+// }
+// console.log(neutralise("-+-+-+", "-+-+-+"));
 
 // ===131===
 // Create a function that takes three values:
