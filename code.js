@@ -1,25 +1,37 @@
 "useStrict";
 // ===133===
+const data = [
+  { amount: "100", user: "admin", date: "March 6, 2019" },
+  { amount: "120", user: "admin", date: "March 6, 2019" },
+  { amount: "80", user: "admin", date: "March 7, 2019" },
+  { amount: "200", user: "admin", date: "March 7, 2019" },
+];
+
+function getDates(data) {
+  return data.reduce((prev, val) => prev + +val.amount, 0);
+}
+console.log(getDates(data));
+// ===133===
 // Create a function that always returns true for every item in a given array. However, if an element is the word "flick", switch to always returning the opposite boolean value.
 
-function flickSwitch(arr) {
-  if (arr.length === 0) {
-    return arr;
-  }
+// function flickSwitch(arr) {
+//   if (arr.length === 0) {
+//     return arr;
+//   }
 
-  let array = [];
-  let res = true;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== "flick") {
-      array.push(res);
-    } else {
-      res = !res;
-      array.push(res);
-    }
-  }
-  return array;
-}
-console.log(flickSwitch([false, false, "flick", "sheep", "flick"]));
+//   let array = [];
+//   let res = true;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== "flick") {
+//       array.push(res);
+//     } else {
+//       res = !res;
+//       array.push(res);
+//     }
+//   }
+//   return array;
+// }
+// console.log(flickSwitch([false, false, "flick", "sheep", "flick"]));
 // ===132===
 // Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:
 
