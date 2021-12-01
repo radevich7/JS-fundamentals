@@ -1,4 +1,20 @@
 "useStrict";
+// ===132===
+// Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:
+
+// When positives and positives interact, they remain positive.
+// When negatives and negatives interact, they remain negative.
+// But when negatives and positives interact, they become neutral, and are shown as the number 0.
+function neutralise(s1, s2) {
+  return s1
+    .split("")
+    .map((val, index) => {
+      return val == s2[index] ? val : 0;
+    })
+    .join("");
+}
+console.log(neutralise("-+-+-+", "-+-+-+"));
+
 // ===131===
 // Create a function that takes three values:
 
@@ -6,12 +22,12 @@
 // m minutes
 // s seconds
 // Return the value that's the longest duration.
-function longestTime(h, m, s) {
-  let arr = [h * 3600, m * 60, s];
-  let max = Math.max(...arr);
-  return [h, m, s][arr.indexOf(max)];
-}
-console.log(longestTime(1, 59, 3598));
+// function longestTime(h, m, s) {
+//   let arr = [h * 3600, m * 60, s];
+//   let max = Math.max(...arr);
+//   return [h, m, s][arr.indexOf(max)];
+// }
+// console.log(longestTime(1, 59, 3809));
 
 // ===131===
 // A number is said to be Harshad if it's exactly divisible by the sum of its digits. Create a function that determines whether a number is a Harshad or not.
