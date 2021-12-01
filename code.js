@@ -1,5 +1,5 @@
 "useStrict";
-// ===133===
+// // ===133===
 const data = [
   { amount: "100", user: "admin", date: "March 6, 2019" },
   { amount: "120", user: "admin", date: "March 6, 2019" },
@@ -8,7 +8,9 @@ const data = [
 ];
 
 function getDates(data) {
-  return data.reduce((prev, val) => prev + +val.amount, 0);
+  return data.map(({ user, amount }) => {
+    return `${user} owenes ${amount}`;
+  });
 }
 console.log(getDates(data));
 // ===133===
