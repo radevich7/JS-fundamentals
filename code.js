@@ -1,18 +1,35 @@
 "useStrict";
-// // ===133===
-const data = [
-  { amount: "100", user: "admin", date: "March 6, 2019" },
-  { amount: "120", user: "admin", date: "March 6, 2019" },
-  { amount: "80", user: "admin", date: "March 7, 2019" },
-  { amount: "200", user: "admin", date: "March 7, 2019" },
-];
-
-function getDates(data) {
-  return data.map(({ user, amount }) => {
-    return `${user} owenes ${amount}`;
+// // ===134===
+const func1 = (test) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (test) {
+        resolve("hello my friend");
+      } else {
+        reject('doesn"t work');
+      }
+    }, 2000);
   });
-}
-console.log(getDates(data));
+};
+
+func1(false)
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err))
+  .finally(() => console.log("FINALLY"));
+// // ===133===
+// const data = [
+//   { amount: "100", user: "admin", date: "March 6, 2019" },
+//   { amount: "120", user: "admin", date: "March 6, 2019" },
+//   { amount: "80", user: "admin", date: "March 7, 2019" },
+//   { amount: "200", user: "admin", date: "March 7, 2019" },
+// ];
+
+// function getDates(data) {
+//   return data.map(({ user, amount }) => {
+//     return `${user} owenes ${amount}`;
+//   });
+// }
+// console.log(getDates(data));
 // ===133===
 // Create a function that always returns true for every item in a given array. However, if an element is the word "flick", switch to always returning the opposite boolean value.
 
