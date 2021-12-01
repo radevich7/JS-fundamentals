@@ -1,5 +1,19 @@
 "useStrict";
 // ===131===
+// Create a function that takes three values:
+
+// h hours
+// m minutes
+// s seconds
+// Return the value that's the longest duration.
+function longestTime(h, m, s) {
+  let arr = [h * 3600, m * 60, s];
+  let max = Math.max(...arr);
+  return [h, m, s][arr.indexOf(max)];
+}
+console.log(longestTime(1, 59, 3598));
+
+// ===131===
 // A number is said to be Harshad if it's exactly divisible by the sum of its digits. Create a function that determines whether a number is a Harshad or not.
 
 // function isHarshad(n) {
