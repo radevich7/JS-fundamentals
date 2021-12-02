@@ -1,21 +1,35 @@
 "useStrict";
-// // ===134===
-const func1 = (test) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (test) {
-        resolve("hello my friend");
-      } else {
-        reject('doesn"t work');
-      }
-    }, 2000);
-  });
-};
+// // ===135===
 
-func1(false)
-  .then((res) => console.log(res))
-  .catch((err) => console.log(err))
-  .finally(() => console.log("FINALLY"));
+// // ===134===
+// const func1 = () => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Func1");
+//     }, 2000);
+//   });
+// };
+
+// const basicSync = () => {
+//   func1().then((res) => {
+//     console.log("sync result:", res);
+//   });
+// };
+// basicSync();
+
+// const basicAsync = async () => {
+//   try {
+//     const result = await func1();
+//     console.log("dasd");
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// basicAsync();
+// func1(false)
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err))
+//   .finally(() => console.log("FINALLY"));
 // // ===133===
 // const data = [
 //   { amount: "100", user: "admin", date: "March 6, 2019" },
