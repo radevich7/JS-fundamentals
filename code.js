@@ -1,5 +1,25 @@
 "useStrict";
-// // ===135===
+// ===136===
+
+const twitter = "twitter.com";
+const wes = {
+  first: "Wes",
+  last: "Bos",
+  links: {
+    social: {
+      twitter: "https://twitter.com/wesbos",
+      facebook: "https://facebook.com/wesbos.developer",
+    },
+    web: {
+      blog: "https://wesbos.com",
+    },
+  },
+};
+const { twitter: tweet, facebook: fb } = wes.links.social;
+
+console.log(wes);
+
+// ===135===
 // Given a two digit number, return true if that number contains one even and one odd digit.
 
 // 1create a function that takes two digit number as an argument
@@ -11,21 +31,21 @@
 //4 return true if one is even and one is odd, else false
 
 // 1
-function twoDigit(n) {
-  return ~~(n / 10) % 2 !== n % 2;
-  // let split=num.toString().split('')
-  // // 3
-  // let firstNum=+split[0]
-  // let secondNum=+split[1]
-  // let array=[]
-  // const checkEven=(number)=>{
-  //    return  number%2===0 ?array.push(true) :array.push(false)
-  // }
-  // checkEven(firstNum)
-  // checkEven(secondNum)
-  // return array.includes(false)&& array.includes(true) ? true :false
-}
-console.log(twoDigit(31));
+// function twoDigit(n) {
+// return ("" + n)[0] % 2 !== ("" + n)[1] % 2;
+// let split=num.toString().split('')
+// // 3
+// let firstNum=+split[0]
+// let secondNum=+split[1]
+// let array=[]
+// const checkEven=(number)=>{
+//    return  number%2===0 ?array.push(true) :array.push(false)
+// }
+// checkEven(firstNum)
+// checkEven(secondNum)
+// return array.includes(false)&& array.includes(true) ? true :false
+// }
+// console.log(twoDigit(31));
 
 // // ===134===
 // const func1 = () => {
