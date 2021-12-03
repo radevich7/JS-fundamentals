@@ -1,4 +1,24 @@
 "useStrict";
+// ===138===
+// Create a function that takes a word and returns true if the word has two consecutive identical letters.
+
+// Examples
+// doubleLetters("loop") ➞ true
+
+// doubleLetters("yummy") ➞ true
+
+// doubleLetters("orange") ➞ false
+
+// doubleLetters("munchkin") ➞ false
+
+//  create function and call it
+//  regex
+
+// function doubleLetters(word){
+//     let res=word.match(/\b.*([A-Za-z])\1.*\b/g)
+//     return res ? true :false
+// }
+// console.log(doubleLetters('lalaaala'))
 // ===137===
 // Create a function that takes a number as an argument and returns a string formatted to separate thousands.
 
