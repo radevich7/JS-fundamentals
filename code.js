@@ -1,23 +1,51 @@
 "useStrict";
+// ===137===
+// Create a function that takes a number as an argument and returns a string formatted to separate thousands.
+
+// Examples
+// formatNum(1000) ➞ "1,000"
+
+// formatNum(100000) ➞ "100,000"
+
+// formatNum(20) ➞ "20"
+// Notes
+// You can expect a valid number for all test cases.
+
+// function formatNum(num){
+//     // 2. Convert number to string
+//     let string= num+''
+
+//     if ( num>=1000){
+//         return num.toLocaleString()
+//         // let zeros=string.split('').filter(val=>+val===0)
+//         // let number=string.split('').filter(val=>+val!==0)
+//         // return number+zeros.join()
+//     }else {
+//         return string
+//     }
+
+// }
+
+// console.log(formatNum(100000))
 // ===136===
 
-const twitter = "twitter.com";
-const wes = {
-  first: "Wes",
-  last: "Bos",
-  links: {
-    social: {
-      twitter: "https://twitter.com/wesbos",
-      facebook: "https://facebook.com/wesbos.developer",
-    },
-    web: {
-      blog: "https://wesbos.com",
-    },
-  },
-};
-const { twitter: tweet, facebook: fb } = wes.links.social;
+// const twitter = "twitter.com";
+// const wes = {
+//   first: "Wes",
+//   last: "Bos",
+//   links: {
+//     social: {
+//       twitter: "https://twitter.com/wesbos",
+//       facebook: "https://facebook.com/wesbos.developer",
+//     },
+//     web: {
+//       blog: "https://wesbos.com",
+//     },
+//   },
+// };
+// const { twitter: tweet, facebook: fb } = wes.links.social;
 
-console.log(wes);
+// console.log(wes);
 
 // ===135===
 // Given a two digit number, return true if that number contains one even and one odd digit.
