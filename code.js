@@ -1,4 +1,35 @@
 "useStrict";
+// ===139===
+// Given an input string, reverse the string word by word, the first word will be the last, and so on.
+
+// Examples
+// reverseWords(" the sky is blue") ➞ "blue is sky the"
+
+// reverseWords("hello   world!  ") ➞ "world! hello"
+
+// reverseWords("a good example") ➞ "example good a"
+// Notes
+// A word is defined as a sequence of non-space characters.
+// The input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.
+// You need to reduce multiple spaces between two words to a single space in the reversed string.
+// Try to solve this in linear time.
+
+// write a function and call it
+// split string into array
+// reverse
+// // join into the string and return it
+
+// const reverse=(string)=>{
+//     // let split= string.split(' ').filter(val=>val.length>0)
+//     // let reverse=split.reverse()
+//     // let join=reverse.join(' ')
+
+//     return string.split(' ').filter(val=>val.length>0).reverse().join(' ')
+
+//     }
+
+//     console.log(reverse('blue   sky here come'))
+
 // ===138===
 // Create a function that takes a word and returns true if the word has two consecutive identical letters.
 
