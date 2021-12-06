@@ -1,4 +1,26 @@
 "useStrict";
+// ===141===
+// In this challenge you will receive an input of the form:
+
+// [[[[[[[[[[[]]]]]]]]]]]
+// In other words, an array containing an array containing an array containing... an array containing nothing.
+
+// Your goal is to measure the depth of this array, where [] has a depth 1, [[]] has depth of 2, [[[]]] has depth 3, etc.
+
+// Examples
+// measureDepth([]) ➞ 1
+
+// measureDepth([[]]) ➞ 2
+
+// measureDepth([[[]]]) ➞ 3
+
+// measureDepth([[[[[[[[[[[]]]]]]]]]]]) ➞ 11
+// Notes
+// For a bonus challenge, try to find a solution without recursion.
+// const measureDepth = (arr) => JSON.stringify(arr);
+
+// console.log(measureDepth([[[[[[]]]]]]));
+
 // ===140===
 // Return the total number of arrays inside a given array.
 
@@ -17,10 +39,10 @@
 
 // if array.length <1 return 0, else length
 
-const totalNum = (array) => {
-  return array.filter((x) => x.length).length;
-};
-console.log(totalNum([]));
+// const totalNum = (array) => {
+//   return array.filter((x) => x.length).length;
+// };
+// console.log(totalNum([]));
 // ===139===
 // Given an input string, reverse the string word by word, the first word will be the last, and so on.
 
