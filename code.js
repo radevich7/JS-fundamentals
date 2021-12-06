@@ -1,4 +1,26 @@
 "useStrict";
+// ===140===
+// Return the total number of arrays inside a given array.
+
+// Examples
+// numOfSubbarrays([[1, 2, 3]]) ➞ 1
+
+// numOfSubbarrays([[1, 2, 3], [1, 2, 3], [1, 2, 3]]) ➞ 3
+
+// numOfSubbarrays([[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]) ➞ 4
+
+// numOfSubbarrays([1, 2, 3]) ➞ 0
+
+//  create function and call it
+
+// calculate the number of arrays
+
+// if array.length <1 return 0, else length
+
+const totalNum = (array) => {
+  return array.filter((x) => x.length).length;
+};
+console.log(totalNum([]));
 // ===139===
 // Given an input string, reverse the string word by word, the first word will be the last, and so on.
 
