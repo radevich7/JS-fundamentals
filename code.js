@@ -1,4 +1,60 @@
 "useStrict";
+// ===145===
+// Create a function that takes a number a and finds the missing exponent x so that a when raised to the power of x is equal to b.
+
+// Examples
+// solveForExp(4, 1024) ➞ 5
+
+// solveForExp(2, 1024) ➞ 10
+
+// solveForExp(9, 3486784401) ➞ 10
+// Notes
+// a is raised to the power of what in order to equal b?
+
+let baseLog = (a, b) => {
+  return Math.round(Math.log(b) / Math.log(a));
+};
+console.log(baseLog(2, 8));
+
+// ===144===
+// // Usually when you sign up for an account to buy something, your credit card number, phone number or answer to a secret question is partially obscured in some way. Since someone could look over your shoulder, you don't want that shown on your screen. Hence, the website masks these strings.
+
+// // Your task is to create a function that takes a string, transforms all but the last four characters into "#" and returns the new masked string.
+
+// // Examples
+// // maskify("4556364607935616") ➞ "############5616"
+
+// // maskify("64607935616") ➞ "#######5616"
+
+// // maskify("1") ➞ "1"
+
+// // maskify("") ➞ ""
+// // Notes
+// // The maskify function must accept a string of any length.
+// // An empty string should return an empty string (fourth example above).
+
+// // writing the function and calling it
+
+// // check the length of the string and if length is <=4 return num,
+
+// // return  slice last four digits from the array and join them
+
+// const maskNumber=(string)=>{
+//   if (string.length<=4){
+//       return string
+//   }else {
+
+//   let regex=/[\s\S]/g
+//   let masked=string.replace(regex, '#')
+//   let digits= string.split('').slice(-4).join('')
+//   return masked.slice(0,string.length-4)+digits
+
+//   }
+
+// }
+
+// console.log(maskNumber('3242344543534'))
+
 // ===143===
 // A number is said to be Harshad if it's exactly divisible by the sum of its digits. Create a function that determines whether a number is a Harshad or not.
 
