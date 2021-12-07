@@ -1,4 +1,45 @@
 "useStrict";
+// ===143===
+// A number is said to be Harshad if it's exactly divisible by the sum of its digits. Create a function that determines whether a number is a Harshad or not.
+
+// Examples
+// isHarshad(75) ➞ false
+// // 7 + 5 = 12
+// // 75 is not exactly divisible by 12
+
+// isHarshad(171) ➞ true
+// // 1 + 7 + 1 = 9
+// // 9 exactly divides 171
+
+// isHarshad(481) ➞ true
+
+// isHarshad(89) ➞ false
+
+// isHarshad(516) ➞ true
+
+// isHarshad(200) ➞ true
+// Notes
+// A recursive version of this challenge can be found here.
+
+// write a function and call it
+
+// number to string and  split the number
+
+// sum elements
+
+// check if the num is divisible but the sum
+
+// if yes => true, no =>false
+
+// function isHarshad (num){
+//   const sum= num.toString().split('').reduce((prev,cur)=>+prev+ +cur)
+
+//   return num%sum==0 ? true :false
+
+// }
+
+// console.log (isHarshad(481))
+
 // ===142===
 // Parity bits are used as a very simple checksum to ensure that binary data isn't corrupted during transit. Here's how they work:
 
@@ -22,17 +63,17 @@
 // Notes
 // All inputs will be 7-bits long (so that the parity bit makes it a full byte).
 
-const parity = (string) => {
-  let array = string.split("");
-  let first = array.filter((x) => x == 1).length;
-  if (first % 2 == 0) {
-    array.push("0");
-  } else array.push("1");
+// const parity = (string) => {
+//   let array = string.split("");
+//   let first = array.filter((x) => x == 1).length;
+//   if (first % 2 == 0) {
+//     array.push("0");
+//   } else array.push("1");
 
-  return array.join("");
-};
+//   return array.join("");
+// };
 
-console.log(parity("0110000"));
+// console.log(parity("0110000"));
 
 // ===141===
 // In this challenge you will receive an input of the form:
