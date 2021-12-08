@@ -1,6 +1,51 @@
 "useStrict";
 // ===146===
 
+// Fruitt salads are served best when the fruits are sliced and diced into small chunks!
+
+// For this challenge, slice each fruit in half and sort the chunks alphabetically. This recipe tastes best when the chunks are joined together to make a string.
+
+// Worked Example
+// fruitSalad(["apple", "pear", "grapes"]) ➞ "apargrapepesple"
+
+// // Chunks: ["ap", "ple", "pe", "ar", "gra", "pes"]
+// // Sorted chunks: ["ap", "ar", "gra", "pe", "pes", "ple"]
+// // Final string: "apargrapepesple"
+// Examples
+// fruitSalad(["apple", "pear", "grapes"]) ➞ "apargrapepesple"
+
+// fruitSalad(["raspberries", "mango"]) ➞ "erriesmangoraspb"
+
+// fruitSalad(["banana"]) ➞ "anaban"
+// Notes
+// If a fruit has an odd number of letters, make the right side larger than the left.
+// For example: "apple" will be sliced into "ap" and "ple".
+// All fruits will be given in lowercase.
+
+// const fruitSalad = (arr) => {
+  // return arr.flatMap((f) => [f.slice(0, f.length / 2), f.slice(f.length / 2)]);
+  // let array=[]
+  // const splitParts=arr.map((val,index)=>{
+  //     if ( val.length%2===0){
+
+  //         let firstPart=val.slice(0,val.length/2)
+  //         let secondPart=val.slice(-val.length/2)
+  //          array.push(firstPart)
+  //          array.push(secondPart)
+  //     }else{
+  //         let firstPart=val.slice(0,Math.floor(val.length/2))
+  //         let secondPart=val.slice(-Math.round(val.length/2))
+  //          array.push(firstPart)
+  //          array.push(secondPart)
+
+  //     }
+
+  // })
+  //       return array.sort().join('')
+};
+
+// console.log(fruitSalad(["raspberries", "mango"]))
+
 // ===145===
 // Create a function that takes a number a and finds the missing exponent x so that a when raised to the power of x is equal to b.
 
