@@ -1,4 +1,6 @@
 "useStrict";
+// ===146===
+
 // ===145===
 // Create a function that takes a number a and finds the missing exponent x so that a when raised to the power of x is equal to b.
 
@@ -11,10 +13,10 @@
 // Notes
 // a is raised to the power of what in order to equal b?
 
-let baseLog = (a, b) => {
-  return Math.round(Math.log(b) / Math.log(a));
-};
-console.log(baseLog(2, 8));
+// let baseLog = (a, b) => {
+//   return Math.round(Math.log(b) / Math.log(a));
+// };
+// console.log(baseLog(2, 8));
 
 // ===144===
 // // Usually when you sign up for an account to buy something, your credit card number, phone number or answer to a secret question is partially obscured in some way. Since someone could look over your shoulder, you don't want that shown on your screen. Hence, the website masks these strings.
