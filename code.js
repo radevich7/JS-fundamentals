@@ -1,4 +1,12 @@
 // "useStrict";
+// Write a function that takes time t1 and time t2 and returns the number of hours passed between the two times.
+// var a = parseInt(t1)
+// 	var b = parseInt(t2)
+// 	if (t1.endsWith("PM")) { a += 12 } else if (a == 12) {a = 0}
+// 	if (t2.endsWith("PM")) { b += 12 } else if (b == 12) {b = 0}
+// 	if (a == b) { return "no time passed"}
+// 	return b - a + " hours"
+// }
 // // ===149===
 // A snail goes up the stairs. Every step, he must go up the step, then go across to the next step. He wants to reach the top of the tower.
 
