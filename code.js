@@ -1,4 +1,28 @@
 // "useStrict";
+// // ===148===
+// Given a simple math expression as a string, neatly format it as an equation.
+
+// Examples
+// formatMath("3 + 4") ➞ "3 + 4 = 7"
+
+// formatMath("3 - 2") ➞ "3 - 2 = 1"
+
+// formatMath("4 x 5") ➞ "4 x 5 = 20"
+
+// formatMath("6 / 3") ➞ "6 / 3 = 2"
+// Notes
+// You will need to deal with addition, subtraction, multiplication and division.
+// Division will have whole number answers (and will obviously not involve 0).
+
+// write a function and call it
+// split and return as an array and later with template literal show it to the user
+
+// function formatMath (expr){
+//     return `${expr} = ${eval(expr.replace("x", "*"))}`
+// }
+
+// console.log(formatMath("6 / 3"))
+
 // // ===147===
 // // Create a function that takes a string and replaces the vowels with another character.
 
