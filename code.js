@@ -1,4 +1,49 @@
 // "useStrict";
+// ===151===
+// There's a great war between the even and odd numbers. Many numbers already lost their lives in this war and it's your task to end this. You have to determine which group sums larger: the evens, or the odds. The larger group wins.
+
+// Create a function that takes an array of integers, sums the even and odd numbers separately, then returns the difference between the sum of the even and odd numbers.
+
+// Examples
+// warOfNumbers([2, 8, 7, 5]) ➞ 2
+// // 2 + 8 = 10
+// // 7 + 5 = 12
+// // 12 is larger than 10
+// // So we return 12 - 10 = 2
+
+// warOfNumbers([12, 90, 75]) ➞ 27
+
+// warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]) ➞ 168
+// Notes
+// The given array contains only positive integers.
+
+//write a function and call it
+// filter array to even and odd numbers
+// sum odd and separetaly sum even
+// compare them
+// if even> odd even-odd
+// odd>even odd-even
+
+let warOfNumbers = (arr) => {
+  let even = [];
+  let odd = [];
+
+  let filtered = arr.filter((val) =>
+    val % 2 === 0 ? even.push(val) : odd.push(val)
+  );
+  let sumEven = even.reduce((prev, cur) => prev + cur);
+  let sumOdd = odd.reduce((prev, cur) => prev + cur);
+
+  return sumEven > sumOdd
+    ? sumEven - sumOdd
+    : sumEven < sumOdd
+    ? sumOdd - sumEven
+    : 0;
+};
+
+console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
+
+// ===150===
 // Write a function that takes time t1 and time t2 and returns the number of hours passed between the two times.
 // var a = parseInt(t1)
 // 	var b = parseInt(t2)
