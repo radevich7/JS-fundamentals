@@ -1,4 +1,12 @@
 // "useStrict";
+// ===153===
+// Given an integer array, transform that array into a mirror.
+
+// mirror([0, 2, 4, 6]) ➞ [0, 2, 4, 6, 4, 2, 0]
+const mirror = (arr) => {
+  return [...arr, ...arr.reverse().slice(1)];
+};
+console.log(mirror([0, 2, 4, 6]));
 // ===152===
 // Create a function to determine if the sum of all the individual even digits are greater than the sum of all the individual odd digits in a string of numbers.
 
@@ -6,21 +14,21 @@
 // If the sum of even numbers is greater than the odd numbers, return "Even is greater than Odd".
 // If the sum of both even and odd numbers are equal, return "Even and Odd are the same".
 
-function evenOrOdd(str) {
-  let split = str.split("");
-  let even = split
-    .filter((val) => val % 2 === 0)
-    .reduce((prev, cur) => parseInt(prev) + parseInt(cur));
-  let odd = split
-    .filter((val) => val % 2 !== 0)
-    .reduce((prev, cur) => parseInt(prev) + parseInt(cur));
+// function evenOrOdd(str) {
+//   let split = str.split("");
+//   let even = split
+//     .filter((val) => val % 2 === 0)
+//     .reduce((prev, cur) => parseInt(prev) + parseInt(cur));
+//   let odd = split
+//     .filter((val) => val % 2 !== 0)
+//     .reduce((prev, cur) => parseInt(prev) + parseInt(cur));
 
-  if (even == odd) {
-    return "Even and Odd are the same";
-  }
-  return even > odd ? "Even is greater than Even" : "Odd is greater than Odd";
-}
-console.log(evenOrOdd("143"));
+//   if (even == odd) {
+//     return "Even and Odd are the same";
+//   }
+//   return even > odd ? "Even is greater than Even" : "Odd is greater than Odd";
+// }
+// console.log(evenOrOdd("143"));
 
 // ===151===
 // There's a great war between the even and odd numbers. Many numbers already lost their lives in this war and it's your task to end this. You have to determine which group sums larger: the evens, or the odds. The larger group wins.
