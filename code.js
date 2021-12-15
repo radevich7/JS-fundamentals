@@ -1,12 +1,73 @@
 // "useStrict";
+// ===154===
+// You will be given a string of characters containing only the following characters: ():
+
+// Create a function returns a number based on the number of sad and smiley faces there is.
+
+// The happy faces :) and (: are worth 1.
+// The sad faces :( and ): are worth -1.
+// Working Example
+// happinessNumber(":):(") ➞ -1
+// // The first 2 characters are :)        +1      Total: 1
+// // The next 2 are ):                    -1      Total: 0
+// // The last 2 are :(                    -1       Total: -1
+// Examples
+// happinessNumber(":):(") ➞ -1
+
+// happinessNumber("(:)") ➞ 2
+
+// happinessNumber("::::") ➞ 0
+// Notes
+// All test cases will be valid.
+
+// giveng a string
+// - if :) +1
+// - if :( -1
+//  the characters should reaveluate on each step, so :): - 1 smiley and 1 sad
+//  if there is any other input return 0
+// return total
+
+const happyNumber = (str) => {
+  let split = str.split("");
+
+  let countSmiley = 0;
+  let countSadly = 0;
+  for (let i = 0; i < split.length; i++) {
+    //  ")"
+    if (split[i] === ")") {
+      if (split[i - 1] === ":") {
+        countSmiley++;
+      }
+      if (split[i + 1] === ":") {
+        countSadly--;
+      }
+    }
+    // "("
+
+    if (split[i] === "(") {
+      if (split[i - 1] === ":") {
+        countSadly--;
+      }
+      if (split[i + 1] === ":") {
+        countSmiley++;
+      }
+    }
+  }
+  return countSadly + countSmiley;
+
+  //
+};
+
+console.log(happyNumber(":::()):)"));
+
 // ===153===
 // Given an integer array, transform that array into a mirror.
 
 // mirror([0, 2, 4, 6]) ➞ [0, 2, 4, 6, 4, 2, 0]
-const mirror = (arr) => {
-  return [...arr, ...arr.reverse().slice(1)];
-};
-console.log(mirror([0, 2, 4, 6]));
+// const mirror = (arr) => {
+//   return [...arr, ...arr.reverse().slice(1)];
+// };
+// console.log(mirror([0, 2, 4, 6]));
 // ===152===
 // Create a function to determine if the sum of all the individual even digits are greater than the sum of all the individual odd digits in a string of numbers.
 
@@ -55,24 +116,24 @@ console.log(mirror([0, 2, 4, 6]));
 // if even> odd even-odd
 // odd>even odd-even
 
-let warOfNumbers = (arr) => {
-  let even = [];
-  let odd = [];
+// let warOfNumbers = (arr) => {
+//   let even = [];
+//   let odd = [];
 
-  let filtered = arr.filter((val) =>
-    val % 2 === 0 ? even.push(val) : odd.push(val)
-  );
-  let sumEven = even.reduce((prev, cur) => prev + cur);
-  let sumOdd = odd.reduce((prev, cur) => prev + cur);
+//   let filtered = arr.filter((val) =>
+//     val % 2 === 0 ? even.push(val) : odd.push(val)
+//   );
+//   let sumEven = even.reduce((prev, cur) => prev + cur);
+//   let sumOdd = odd.reduce((prev, cur) => prev + cur);
 
-  return sumEven > sumOdd
-    ? sumEven - sumOdd
-    : sumEven < sumOdd
-    ? sumOdd - sumEven
-    : 0;
-};
+//   return sumEven > sumOdd
+//     ? sumEven - sumOdd
+//     : sumEven < sumOdd
+//     ? sumOdd - sumEven
+//     : 0;
+// };
 
-console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
+// console.log(warOfNumbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243]));
 
 // ===150===
 // Write a function that takes time t1 and time t2 and returns the number of hours passed between the two times.
