@@ -1,4 +1,24 @@
 // "useStrict";
+// ===158===
+
+// ===157===
+// // Write a function that takes a string of one or more words as an argument and returns the same string, but with all five or more letter words reversed. Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+// // Examples
+// // reverse("Reverse") ➞ "esreveR"
+
+// // reverse("This is a typical sentence.") ➞ "This is a lacipyt .ecnetnes"
+
+// // reverse("The dog is big.") ➞ "The dog is big."
+// // Notes
+// // You can expect a valid string to be provided for each test case.
+const reverse = (str) => {
+  return str
+    .split(" ")
+    .map((val) => (val.length >= 5 ? val.split("").reverse().join("") : val))
+    .join(" ");
+};
+// console.log(reverse("Reverse the order of every word greater than or equal to five characters."))
 // ===156===
 // Write a program that takes a temperature input in celsius and converts it to Fahrenheit and Kelvin. Return the converted temperature values in an array.
 
