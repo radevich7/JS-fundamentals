@@ -1,5 +1,68 @@
 // "useStrict";
-// ===158===
+// ===1Create a function that, given a string str, finds a letter that has a single occurrence. Return the letter in uppercase. If the input is empty, return an empty string "".
+
+// Examples
+// singleOccurrence("EFFEAABbc") ➞ "C"
+
+// singleOccurrence("AAAAVNNNNSS") ➞ "V"
+
+// singleOccurrence("S") ➞ "S"
+// Notes
+// The function will not be case sensitive.
+
+// Create a function that, given a string str, finds a letter that has a single occurrence. Return the letter in uppercase. If the input is empty, return an empty string "".
+
+// Examples
+// singleOccurrence("EFFEAABbc") ➞ "C"
+
+// singleOccurrence("AAAAVNNNNSS") ➞ "V"
+
+// singleOccurrence("S") ➞ "S"
+// Notes
+// The function will not be case sensitive.
+
+// function singleOccurence (str){
+// if (str.length===0){
+//   return ''
+// };
+// const strUpper=str.toUpperCase();
+// let obj={};
+
+// for (let letter of strUpper ){
+//   if (obj[letter]){
+//       obj[letter]++;
+//   }else{
+//       obj[letter]=1;
+//   }
+//   // return Object.values()
+// }
+
+// console.log(singleOccurence('EFFEAABbc'))
+function singleOccurence(str) {
+  //  If the input is empty return empty string
+  if (str.length === 0) {
+    return "";
+  }
+  // upper case all the elements
+
+  const strUpper = str.toUpperCase();
+  // create an object and count occurence for each character
+  let obj = {};
+
+  for (let letter of strUpper) {
+    if (obj[letter]) {
+      obj[letter]++;
+    } else {
+      obj[letter] = 1;
+    }
+  }
+
+  return Object.keys(obj).find((key) => obj[key] === 1);
+
+  // return Object.values()
+}
+
+console.log(singleOccurence("EFFEAABbc"));
 
 // ===157===
 // // Write a function that takes a string of one or more words as an argument and returns the same string, but with all five or more letter words reversed. Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
@@ -12,12 +75,12 @@
 // // reverse("The dog is big.") ➞ "The dog is big."
 // // Notes
 // // You can expect a valid string to be provided for each test case.
-const reverse = (str) => {
-  return str
-    .split(" ")
-    .map((val) => (val.length >= 5 ? val.split("").reverse().join("") : val))
-    .join(" ");
-};
+// const reverse = (str) => {
+//   return str
+//     .split(" ")
+//     .map((val) => (val.length >= 5 ? val.split("").reverse().join("") : val))
+//     .join(" ");
+// };
 // console.log(reverse("Reverse the order of every word greater than or equal to five characters."))
 // ===156===
 // Write a program that takes a temperature input in celsius and converts it to Fahrenheit and Kelvin. Return the converted temperature values in an array.
