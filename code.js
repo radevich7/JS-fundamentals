@@ -1,4 +1,54 @@
 // "useStrict";
+// ===159===
+// Suppose an image can be represented as a 2D array of 0s and 1s. Write a function to reverse an image. Replace the 0s with 1s and vice versa.
+
+// Examples
+// reverseImage([
+//   [1, 0, 0],
+//   [0, 1, 0],
+//   [0, 0, 1]
+// ]) ➞ [
+//   [0, 1, 1],
+//   [1, 0, 1],
+//   [1, 1, 0]
+// ]
+
+// reverseImage([
+//   [1, 1, 1],
+//   [0, 0, 0]
+// ]) ➞ [
+//   [0, 0, 0],
+//   [1, 1, 1]
+// ]
+
+// reverseImage([
+//   [1, 0, 0],
+//   [1, 0, 0]
+// ]) ➞ [
+//   [0, 1, 1],
+//   [0, 1, 1]
+// ]
+
+// write a function and call it.
+// loop over the array and change 1 to 0s and 0s to 1s
+
+const reverseImage = (arr) => {
+  const reverse = arr.map((val) =>
+    val.map((digit, index) =>
+      digit === 1 ? (digit[index] = 0) : (digit[index] = 1)
+    )
+  );
+  return reverse;
+};
+
+console.log(
+  reverseImage([
+    [1, 0, 0],
+    [0, 1, 0],
+    [0, 0, 1],
+  ])
+);
+
 // ===1Create a function that, given a string str, finds a letter that has a single occurrence. Return the letter in uppercase. If the input is empty, return an empty string "".
 
 // Examples
@@ -37,32 +87,32 @@
 //   // return Object.values()
 // }
 
-// console.log(singleOccurence('EFFEAABbc'))
-function singleOccurence(str) {
-  //  If the input is empty return empty string
-  if (str.length === 0) {
-    return "";
-  }
-  // upper case all the elements
+// // console.log(singleOccurence('EFFEAABbc'))
+// function singleOccurence(str) {
+//   //  If the input is empty return empty string
+//   if (str.length === 0) {
+//     return "";
+//   }
+//   // upper case all the elements
 
-  const strUpper = str.toUpperCase();
-  // create an object and count occurence for each character
-  let obj = {};
+//   const strUpper = str.toUpperCase();
+//   // create an object and count occurence for each character
+//   let obj = {};
 
-  for (let letter of strUpper) {
-    if (obj[letter]) {
-      obj[letter]++;
-    } else {
-      obj[letter] = 1;
-    }
-  }
+//   for (let letter of strUpper) {
+//     if (obj[letter]) {
+//       obj[letter]++;
+//     } else {
+//       obj[letter] = 1;
+//     }
+//   }
 
-  return Object.keys(obj).find((key) => obj[key] === 1);
+//   return Object.keys(obj).find((key) => obj[key] === 1);
 
-  // return Object.values()
-}
+//   // return Object.values()
+// }
 
-console.log(singleOccurence("EFFEAABbc"));
+// console.log(singleOccurence("EFFEAABbc"));
 
 // ===157===
 // // Write a function that takes a string of one or more words as an argument and returns the same string, but with all five or more letter words reversed. Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
