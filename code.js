@@ -1,4 +1,55 @@
 // "useStrict";
+// ===160===
+// Create a function that accepts a string, checks if it's a valid email address and returns either true or false, depending on the evaluation.
+
+// The string must contain an @ character.
+// The string must contain a . character.
+// The @ must have at least one character in front of it.
+// e.g. "e@edabit.com" is valid while "@edabit.com" is invalid.
+// The . and the @ must be in the appropriate places.
+// e.g. "hello.email@com" is invalid while "john.smith@email.com" is valid.
+// If the string passes these tests, it's considered a valid email address.
+
+// Examples
+// validateEmail("@gmail.com") ➞ false
+
+// validateEmail("hello.gmail@com") ➞ false
+
+// validateEmail("gmail") ➞ false
+
+// validateEmail("hello@gmail") ➞ false
+
+// validateEmail("hello@edabit.com") ➞ true
+// Notes
+// Check the Tests tab to see exactly what's being evaluated.
+// You can solve this challenge with RegEx, but it's intended to be solved with logic.
+// Solutions using RegEx will be accepted but frowned upon :(
+
+// write a function and check for
+// @ character
+// . character and its position
+// at least one character in the front of the @ character
+
+// if the upper case ?
+// if empty string?
+// if includes two or more @ characters
+// if includes dots two or more in a row
+// length of the string limit
+
+const validateEmail = (str) => {
+  // str.includes('@')
+  // str.length>0
+
+  const at = str.indexOf("@");
+  const dot = str.lastIndexOf(".");
+  const lengthBedore = str.slice(0, at);
+  return (
+    str.includes("@") && at < dot && str.length > 0 && lengthBedore.length > 0
+  );
+};
+
+console.log(validateEmail("assd@asdsss.s"));
+
 // ===159===
 // Suppose an image can be represented as a 2D array of 0s and 1s. Write a function to reverse an image. Replace the 0s with 1s and vice versa.
 
