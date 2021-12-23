@@ -1,4 +1,28 @@
 // "useStrict";
+// ===161===
+// Remove the Special Characters from a String
+// Create a function that takes a string, removes all "special" characters (e.g. ., !, @, #, $, %, ^, &, \, *, (, )) and returns the new string. The only non-alphanumeric characters allowed are dashes -, underscores _ and spaces.
+
+// Examples
+// removeSpecialCharacters("The quick brown fox!") ➞ "The quick brown fox"
+
+// removeSpecialCharacters("%fd76$fd(-)6GvKlO.") ➞ "fd76fd-6GvKlO"
+
+// removeSpecialCharacters("D0n$c sed 0di0 du1") ➞ "D0nc sed 0di0 du1"
+// Notes
+// N/A
+
+// remove all special characters from the string (leave - spaces and _)
+
+// write a function and call it
+// set regex expression for this scenario
+// remove thiose characters from the string
+
+const replaceAll = (str) => {
+  let regex = /[.!@#$%^&\*()=[\]{}<>+~,'`"?|]/g;
+  return str.replace(regex, "");
+};
+console.log(replaceAll("aasdsadsd asdsd !"));
 // ===160===
 // Create a function that accepts a string, checks if it's a valid email address and returns either true or false, depending on the evaluation.
 
