@@ -1,4 +1,46 @@
 // "useStrict";
+// ===163===
+// Create a function that takes two strings and returns either true or false depending on whether they're anagrams or not.
+
+// Examples
+// isAnagram("cristian", "Cristina") ➞ true
+
+// isAnagram("Dave Barry", "Ray Adverb") ➞ true
+
+// isAnagram("Nope", "Note") ➞ false
+// Notes
+// Should be case insensitive.
+// The two given strings can be of different lengths.
+
+// write a function and call it
+// to Lower case all of the strings
+// Frequancy of letters for first str
+// freaquancy of letteres for the second string
+// compare if the number of letteres are the same
+
+const isAnagram = (str1, str2) => {
+  let string1 = str1.toLowerCase();
+  let string2 = str2.toLowerCase();
+  if (string1.length !== string2.length) {
+    return false;
+  }
+  const lookup = {};
+  for (let i = 0; i < string1.length; i++) {
+    let letter = string1[i];
+    lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1);
+  }
+  for (let i = 0; i < string2.length; i++) {
+    let letter = string2[i];
+    if (!lookup[letter]) {
+      return false;
+    } else {
+      lookup[letter] -= 1;
+    }
+  }
+  return true;
+};
+
+console.log(isAnagram("cristian", "Cristina"));
 // ===162===
 const boomIntensity = (num) => {
   let letter = "o";
