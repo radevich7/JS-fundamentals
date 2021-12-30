@@ -1,4 +1,20 @@
 // "useStrict";
+// ===162===
+const boomIntensity = (num) => {
+  let letter = "o";
+  if (num < 2) {
+    return "boom";
+  }
+  if (num % 2 === 0 && num % 5 === 0) {
+    return `(B${letter.repeat(num)}m!)`.toUpperCase();
+  }
+  if (num % 2 === 0) {
+    return `B${letter.repeat(num)}m!`;
+  }
+  if (num % 5 === 0) {
+    return `(B${letter.repeat(num)}m)`.toUpperCase();
+  }
+};
 // ===161===
 // Remove the Special Characters from a String
 // Create a function that takes a string, removes all "special" characters (e.g. ., !, @, #, $, %, ^, &, \, *, (, )) and returns the new string. The only non-alphanumeric characters allowed are dashes -, underscores _ and spaces.
