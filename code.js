@@ -1,20 +1,29 @@
+"use strict";
 //
-const myName = "Jonas";
-
-function first() {
-  const age = 30;
-  if (age >= 30) {
-    const decade = 3;
-    var millenial = true;
-  }
-
-  function second() {
-    const job = "teacher";
-    console.log(decade);
-  }
-  second();
+let counter = 0;
+function count() {
+  console.log(counter);
+  return counter++;
 }
-first();
+
+document.querySelector(".button").addEventListener("click", count);
+
+// const myName = "Jonas";
+
+// function first() {
+//   const age = 30;
+//   if (age >= 30) {
+//     const decade = 3;
+//     var millenial = true;
+//   }
+
+//   function second() {
+//     const job = "teacher";
+//     console.log(decade);
+//   }
+//   second();
+// }
+// first();
 // // ===163===
 // // Create a function that takes two strings and returns either true or false depending on whether they're anagrams or not.
 
