@@ -1,12 +1,51 @@
 "use strict";
-//
-let counter = 0;
-function count() {
-  console.log(counter);
-  return counter++;
+// // ===163===
+// write a function and call it
+//write condition
+//swithc statement for the cchecking for the condition
+
+function game(p1, p2) {
+  switch (p1 + p2) {
+    case "PaperRock":
+    case "ScissorsPaper":
+    case "RockScissors":
+      return "The winner is p1";
+      break;
+    case "RockPaper":
+    case "PaperScissors":
+    case "ScissorsRock":
+      return "The winner is p2";
+      break;
+    default:
+      return "It's a draw";
+  }
 }
 
-document.querySelector(".button").addEventListener("click", count);
+console.log(game("Rock", "Paper"));
+
+// //
+// const secureBooking = function (params) {
+//   let passengerCount = 0;
+//   if (passengerCount === 0) {
+//     let bi = passengerCount;
+//   }
+//   return function () {
+//     bi++;
+
+//     console.log(bi);
+//   };
+// };
+// const booker = secureBooking();
+// booker();
+// booker();
+
+// let counter = 0;
+// function count() {
+//   console.log(counter);
+//   return counter++;
+// }
+
+// document.querySelector(".button").addEventListener("click", count);
 
 // const myName = "Jonas";
 
