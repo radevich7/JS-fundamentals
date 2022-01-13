@@ -1,27 +1,43 @@
 "use strict";
+// ===164===
+
+function duplicateCheck(array) {
+  //     let arr=[]
+  //     let unique=array.forEach(val=>arr.push(Array.from(new Set(val)).join('')))
+  // let result=[];
+  // for (let i=0;i<array.length;i++){
+  //     if (array[i]===arr[i]){
+  //         result.push(array[i])
+  //     }
+  // }
+  // return result
+  return array.filter((x) => new Set(x).size === x.length);
+}
+
+console.log(duplicateCheck(["abb", "abc", "abcdb", "aea", "bbb"]));
 // // ===163===
 // write a function and call it
 //write condition
 //swithc statement for the cchecking for the condition
 
-function game(p1, p2) {
-  switch (p1 + p2) {
-    case "PaperRock":
-    case "ScissorsPaper":
-    case "RockScissors":
-      return "The winner is p1";
-      break;
-    case "RockPaper":
-    case "PaperScissors":
-    case "ScissorsRock":
-      return "The winner is p2";
-      break;
-    default:
-      return "It's a draw";
-  }
-}
+// function game(p1, p2) {
+//   switch (p1 + p2) {
+//     case "PaperRock":
+//     case "ScissorsPaper":
+//     case "RockScissors":
+//       return "The winner is p1";
+//       break;
+//     case "RockPaper":
+//     case "PaperScissors":
+//     case "ScissorsRock":
+//       return "The winner is p2";
+//       break;
+//     default:
+//       return "It's a draw";
+//   }
+// }
 
-console.log(game("Rock", "Paper"));
+// console.log(game("Rock", "Paper"));
 
 // //
 // const secureBooking = function (params) {
