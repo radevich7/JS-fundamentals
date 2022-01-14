@@ -1,21 +1,29 @@
 "use strict";
+// ===165===
+
+const getLength = function (array) {
+  console.log(array);
+  return array.length === 0 ? 0 : array.flat(Infinity).length;
+};
+
+console.log(getLength([1, [2, 3]]));
 // ===164===
 
-function duplicateCheck(array) {
-  //     let arr=[]
-  //     let unique=array.forEach(val=>arr.push(Array.from(new Set(val)).join('')))
-  // let result=[];
-  // for (let i=0;i<array.length;i++){
-  //     if (array[i]===arr[i]){
-  //         result.push(array[i])
-  //     }
-  // }
-  // return result
-  return array.filter((x) => new Set(x).size === x.length);
-}
+// function duplicateCheck(array) {
+//   //     let arr=[]
+//   //     let unique=array.forEach(val=>arr.push(Array.from(new Set(val)).join('')))
+//   // let result=[];
+//   // for (let i=0;i<array.length;i++){
+//   //     if (array[i]===arr[i]){
+//   //         result.push(array[i])
+//   //     }
+//   // }
+//   // return result
+//   return array.filter((x) => new Set(x).size === x.length);
+// }
 
-console.log(duplicateCheck(["abb", "abc", "abcdb", "aea", "bbb"]));
-// // ===163===
+// console.log(duplicateCheck(["abb", "abc", "abcdb", "aea", "bbb"]));
+// // // ===163===
 // write a function and call it
 //write condition
 //swithc statement for the cchecking for the condition
