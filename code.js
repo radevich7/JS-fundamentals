@@ -1,13 +1,58 @@
 "use strict";
+
+// ===167===
+// Given a fraction frac (given in the format "1/2" for example) and n number of decimal places, return a sentence in the following format:
+
+// "{fraction} rounded to {n} decimal places is {answer}"
+
+// Examples
+// fracRound("1/3", 5) ➞ "1/3 rounded to 5 decimal places is 0.33333"
+
+// fracRound("2/8", 4) ➞ "2/8 rounded to 4 decimal places is 0.2500"
+
+// fracRound("22/7", 2) ➞ "22/7 rounded to 2 decimal places is 3.14"
+// Notes
+// Add trailing zeros if n is greater than the actual number of decimal places the fraction has (see example #2).
+// Numbers greater than one may be given as top-heavy fractions (no mixed numbers).
+// n won't be 1 because that would cause "decimal places" to be "decimal place", making the challenge more cumbersome than it needs to be.
+
+// function fracRound(frac, n) {
+//   let [first, second] = frac.split("/");
+//   let length = n + 2;
+//   return `${frac} rounded to ${n} decimal places is ${(
+//     +first / +second
+//   ).toFixed(n)}`;
+// }
+
+// console.log(fracRound("21/98", 6));
+// ===166===
+// You are to read each part of the date into its own integer type variable. The year should be a 4 digit number. You can assume the user enters a correct date formatted d m yyyy (no error checking required).
+
+// Determine whether the entered date is a magic date. Here are the rules for a magic date:
+
+// mm * dd is a 1-digit number that matches the last digit of yyyy or
+// mm * dd is a 2-digit number that matches the last 2 digits of yyyy or
+// mm * dd is a 3-digit number that matches the last 3 digits of yyyy
+// The program should then display true if the date is magic, or false if it is not.
+
+// Examples
+// Magic("1 1 2011") ➞ true
+
+// Magic("4 1 2001") ➞ false
+
+// Magic("5 2 2010") ➞ true
+
+// Magic("9 2 2011") ➞ false
+
 // ===165===
 
-const getLength = function (array) {
-  console.log(array);
-  return array.length === 0 ? 0 : array.flat(Infinity).length;
-};
+// const getLength = function (array) {
+//   console.log(array);
+//   return array.length === 0 ? 0 : array.flat(Infinity).length;
+// };
 
-console.log(getLength([1, [2, 3]]));
-// ===164===
+// console.log(getLength([1, [2, 3]]));
+// // ===164===
 
 // function duplicateCheck(array) {
 //   //     let arr=[]
