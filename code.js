@@ -1,4 +1,33 @@
 "use strict";
+// ===168===
+// Create a function which validates whether a 3 character string is a vowel sandwich. In order to have a valid sandwich, the string must satisfy the following rules:
+
+// The first and last characters must be a consonant.
+// The character in the middle must be a vowel.
+// Examples
+// isVowelSandwich("cat") ➞ true
+
+// isVowelSandwich("ear") ➞ false
+
+// isVowelSandwich("bake") ➞ false
+
+// isVowelSandwich("try") ➞ false
+// Notes
+// Return false if the word is not 3 characters in length.
+// All words will be given in lowercase.
+// y is not considered a vowel.
+
+// function isVowelSandwich(str){
+//     if (str.length!==3) return false;
+
+//     function isVowel(c) {
+//         return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1
+//     }
+
+//     return isVowel(str[1]) && !isVowel(str[0])&& !isVowel(str[2]) ? true :false
+
+//     }
+//     console.log(isVowelSandwich('bake'))
 
 // ===167===
 // Given a fraction frac (given in the format "1/2" for example) and n number of decimal places, return a sentence in the following format:
