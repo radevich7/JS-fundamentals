@@ -1,4 +1,24 @@
 // // "use strict";
+// // // ===175===
+
+// // // ===174===
+// Create a function that determines whether a shopping order is eligible for free shipping. An order is eligible for free shipping if the total cost of items purchased exceeds $50.00.
+
+// Examples
+// freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }) ➞ false
+
+// freeShipping({ "Flatscreen TV": 399.99 }) ➞ true
+
+// freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }) ➞ true
+// Notes
+// Ignore tax or additional fees when calculating the total order cost.
+
+// const freeShipping=(obj)=>{
+//     return Object.values(obj).reduce((prev,cur)=>prev+cur)>50 ? true :false
+
+//     }
+
+//     console.log(freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
 // // // ===173===
 // // Create a function to partition an array from left to right.
 
