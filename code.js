@@ -1,4 +1,10 @@
 // // "use strict";
+// // // ===178===
+const isSastry = (cur) => {
+  return Number.isInteger(Math.sqrt(+(cur + `${cur + 1}`)));
+};
+
+console.log(isSastry(184));
 // // // ===177===
 // Given two strings, repeatedly cycle through all of the letters in the first string until it is the same length as the second string.
 
