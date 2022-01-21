@@ -1,4 +1,5 @@
 // // "use strict";
+
 // // // ===175===
 // A half life is the amount of time for half of a radioactive substance to decay.
 
@@ -33,7 +34,7 @@
 
 // const halfLifeCalc=(mass, timeElapse,quantityHalfs)=>{
 //     let weight=mass;
-//     for (let i=0;i<quantityHalfs;i++){
+// for (let i=0;i<quantityHalfs;i++){
 //         weight/=2
 
 //     }
