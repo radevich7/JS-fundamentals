@@ -1,4 +1,53 @@
 // // "use strict";
+// // // ===177===
+// Given two strings, repeatedly cycle through all of the letters in the first string until it is the same length as the second string.
+
+// Examples
+// stringCycling("abc", "hello") ➞ "abcab"
+
+// stringCycling("programming", "edabit") ➞ "progra"
+
+// stringCycling("the world in me evolves in hers", "i love Tesh, so much so") ➞ "the world in me evolves"
+
+// stringCycling("a thing of beauty is a joy forever", "indulge me surely") ➞ "a thing of beauty"
+
+// stringCycling("to", "hide") ➞ "toto"
+
+// stringCycling("such a feeling coming over me", "top of the world") ➞ "such a feeling c"
+// Notes
+// All tests will include valid strings.
+// Given two strings, repeatedly cycle through all of the letters in the first string until it is the same length as the second string.
+
+// Examples
+// stringCycling("abc", "hello") ➞ "abcab"
+
+// stringCycling("programming", "edabit") ➞ "progra"
+
+// stringCycling("the world in me evolves in hers", "i love Tesh, so much so") ➞ "the world in me evolves"
+
+// stringCycling("a thing of beauty is a joy forever", "indulge me surely") ➞ "a thing of beauty"
+
+// stringCycling("to", "hide") ➞ "toto"
+
+// stringCycling("such a feeling coming over me", "top of the world") ➞ "such a feeling c"
+// Notes
+// All tests will include valid strings.
+
+// const stringCycling=(str1,str2)=>{
+//     let saver=[];
+//         if(str2.length>str1.length){
+//     // check if the string1 length less than second one than use it again
+//             for(let i=0; i<=str2.length;i++){
+//     // loop over second string
+//                 saver.push(str1)
+//             }
+//         }else{
+//     // otherwise split it based on the length of the second string
+//             return str1.slice(0,str2.length)
+//     }
+//     return saver.join('').slice(0,str2.length)
+// }
+// console.log(stringCycling("ad", "hello"))
 // // // ===176===
 
 // Create a function that takes two dates and returns the number of days between the first and second date.
