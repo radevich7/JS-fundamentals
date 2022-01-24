@@ -1,5 +1,52 @@
 // // "use strict";
+// ===179===
+// This challenge has five miniature exercises to help practice proficiency in string slicing. Check the examples below for a visual indicator of how to slice the strings. Good luck!
 
+// Examples
+// const s = "abcdefghijklmnopqrstuvwxyz"
+// challenge1(s) ➞ "abcde"
+// // First 5 characters of the string.
+
+// challenge2(s) ➞ "vwxyz"
+// // Last 5 characters of the string.
+
+// challenge3(s) ➞ "zyxwvutsrqponmlkjihgfedcba"
+// // All characters in the string from back.
+
+// challenge4(s) ➞ "fedcba"
+// // First 6 characters in the string (start with 6th character and go backwards).
+
+// challenge5(s) ➞ "tvxz"
+// // Take last 7 characters and only return odd positioned ones.
+// Notes
+// Check the Tests tab for more examples.
+// See the Resources tab for further information on learning string slicing.
+// You may use methods other than slice() as needed to complete some of the challenges.
+// All test cases follow the same slicing pattern as the above example.
+
+// function challenge1(s) {
+// 	return s.slice(0,5)
+// }
+
+// function challenge2(s) {
+// 	return s.slice(-5)
+// }
+
+// function challenge3(s) {
+// 	return [...s].reverse().join('').slice(0,s.length)
+// }
+
+// function challenge4(s) {
+// 	return s.slice(0,6).reverse()
+// }
+
+// function challenge5(s) {
+// 	return [...s.slice(-7)].filter((val,index)=>index%2===0).join('')
+// }
+
+// console.log(challenge5( 'abcdefghijklmnopqrstuvwxyz'))
+
+// ===178===
 // Create a function that takes an array of positive and negative numbers. Return an array where the first element is the count of positive numbers and the second element is the sum of negative numbers.
 
 // Examples
