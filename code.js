@@ -1,4 +1,29 @@
 // // "use strict";
+// ===180===
+// Transcribe the given DNA strand into corresponding mRNA - a type of RNA, that will be formed from DNA after transcription. DNA has the bases A, T, G and C, while RNA converts to U, A, C and G respectively.
+
+// Examples
+// dnaToRna("ATTAGCGCGATATACGCGTAC") ➞ "UAAUCGCGCUAUAUGCGCAUG"
+
+// dnaToRna("CGATATA") ➞ "GCUAUAU"
+
+// dnaToRna("GTCATACGACGTA") ➞ "CAGUAUGCUGCAU"
+// Notes
+// Transcription is the process of making complementary strand.
+// A, T, G and C in DNA converts to U, A, C and G respectively in mRNA.
+
+// const dnaToRna=(string)=>{
+//     let obj={"A": "U",
+//         "T":"A",
+//         "G":'C',
+//         'C':'G'
+//     }
+
+// return [...string].map((val,index)=>obj[val] ?val=obj[val]:val).join('')
+//     // val===obj[val] ? val=obj[val] :val
+// }
+
+// console.log(dnaToRna('UAAUCGCGCUAUAUGCGCAUG'))
 // ===179===
 // This challenge has five miniature exercises to help practice proficiency in string slicing. Check the examples below for a visual indicator of how to slice the strings. Good luck!
 
