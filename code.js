@@ -1,4 +1,40 @@
 // // "use strict";
+// ===181===
+// A number is said to be Disarium if the sum of its digits raised to their respective positions is the number itself.
+
+// Create a function that determines whether a number is a Disarium or not.
+
+// Examples
+// isDisarium(75) ➞ false
+// // 7^1 + 5^2 = 7 + 25 = 32
+
+// isDisarium(135) ➞ true
+// // 1^1 + 3^2 + 5^3 = 1 + 9 + 125 = 135
+
+// isDisarium(518) ➞ false
+
+// isDisarium(518) ➞ true
+
+// isDisarium(544) ➞ false
+
+// isDisarium(8) ➞ true
+
+// isDisarium(466) ➞ false
+// Notes
+// Position of the digit is 1-indexed.
+// A recursive version of this challenge can be found via this link.
+
+// const isDisarium = (num) => {
+//   return num
+//     .toString()
+//     .split("")
+//     .map((val, index) => val ** (index + 1))
+//     .reduce((prev, cur) => prev + cur) === num
+//     ? true
+//     : false;
+// };
+// console.log(isDisarium(135));
+
 // ===180===
 // Transcribe the given DNA strand into corresponding mRNA - a type of RNA, that will be formed from DNA after transcription. DNA has the bases A, T, G and C, while RNA converts to U, A, C and G respectively.
 
