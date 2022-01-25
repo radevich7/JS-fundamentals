@@ -1,4 +1,24 @@
 // // "use strict";
+// ===182===
+// The "Reverser" takes a string as input and returns that string in reverse order, with the opposite case.
+
+// Examples
+// reverse("Hello World") ➞ "DLROw OLLEh"
+
+// reverse("ReVeRsE") ➞ "eSrEvEr"
+
+// reverse("Radar") ➞ "RADAr"
+// Notes
+// There will be no punctuation in any of the test cases.
+
+// function reverse (str){
+//     if
+//     return str.split('').reverse().map(val=>val==val.toUpperCase() ? val.toLowerCase() : val.toUpperCase()).join('')
+//     }
+
+//     //
+
+//     console.log(reverse('Hello World'))
 // ===181===
 // A number is said to be Disarium if the sum of its digits raised to their respective positions is the number itself.
 
