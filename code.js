@@ -1,14 +1,49 @@
 // // "use strict";
+
+// ===189===
+
+// const sumZeor = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let k = 0; k < arr.length; i++) {
+//       if (arr[i] + arr[k] === 0) {
+//         return [arr[i], arr[k]];
+//       }
+//     }
+//   }
+// };
+// console.log(sumZeor([-3, -2, -1, 0, 1, 2, 3]));
+
+// ===188===
+// const validAnagram = (str1, str2) => {
+//   if (str1.length !== str2.length) return false;
+//   let obj = {};
+
+//   for (let letter of str1) {
+//     if (obj[letter]) {
+//       obj[letter]++;
+//     } else {
+//       obj[letter] = 0;
+//     }
+//   }
+//   for (let letter2 of str2) {
+//     if (obj[letter2]) {
+//       obj[letter2]--;
+//     }
+//   }
+//   return Object.values(obj).reduce((prev, cur) => prev + cur) === 0;
+// };
+// console.log(validAnagram("azz", "zza"));
+
 // ===187===
-function isValidPhoneNumber(str) {
-  return str[0] === "(" &&
-    str[4] === ")" &&
-    str[5] === " " &&
-    str[9] === "-" &&
-    str.length === 14
-    ? true
-    : false;
-}
+// function isValidPhoneNumber(str) {
+//   return str[0] === "(" &&
+//     str[4] === ")" &&
+//     str[5] === " " &&
+//     str[9] === "-" &&
+//     str.length === 14
+//     ? true
+//     : false;
+// }
 
 // ===186===
 
