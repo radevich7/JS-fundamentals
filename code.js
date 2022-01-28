@@ -1,4 +1,15 @@
 // // "use strict";
+// ===187===
+function isValidPhoneNumber(str) {
+  return str[0] === "(" &&
+    str[4] === ")" &&
+    str[5] === " " &&
+    str[9] === "-" &&
+    str.length === 14
+    ? true
+    : false;
+}
+
 // ===186===
 
 // const peelLayerOff= (array)=>{
