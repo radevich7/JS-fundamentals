@@ -1,5 +1,22 @@
 // // "use strict";
+// ===186===
 
+// const peelLayerOff= (array)=>{
+//     let len=array.length;
+//     if(len<3) return [];
+
+// return array.filter((val,index)=>index!==0 && index!==len-1 && val.splice(0,1) &&val.splice(-1))
+
+// }
+
+// console.log(peelLayerOff(
+//     [
+//   ["a", "b", "c", "d"],
+//   ["e", "f", "g", "h"],
+//   ["i", "j", "k", "l"],
+//   ["m", "n", "o", "p"]
+// ]
+//     ))
 // ===185===
 // Mubashir needs your help to compare two arrays.
 
