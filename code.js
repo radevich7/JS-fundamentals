@@ -1,5 +1,24 @@
 // // "use strict";
+// ===192===
 
+const fizzBuzz = (num) => {
+  let arr = [];
+
+  for (let x = 1; x <= num; x++) {
+    if (x % 5 == 0 && x % 3 == 0) {
+      arr.push("FizzBuzz");
+    } else if (x % 3 == 0) {
+      arr.push("Fizz");
+    } else if (x % 5 == 0) {
+      arr.push("Buzz");
+    } else {
+      arr.push(x);
+    }
+  }
+  return arr;
+};
+
+console.log(fizzBuzz(10));
 // ===191===
 // Given an array of prices prices and a "supposed" total t, return true if there is a hidden fee added to the total (i.e. the total is greater than the sum of prices), otherwise return false.
 
