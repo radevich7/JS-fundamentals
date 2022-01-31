@@ -1,5 +1,46 @@
 // // "use strict";
 
+// ===191===
+// Given an array of prices prices and a "supposed" total t, return true if there is a hidden fee added to the total (i.e. the total is greater than the sum of prices), otherwise return false.
+
+// Examples
+// hasHiddenFee(["$2", "$4", "$1", "$8"], "$15") ➞ false
+
+// hasHiddenFee(["$1", "$2", "$3"], "$6") ➞ false
+
+// hasHiddenFee(["$1"], "$4") ➞ true
+// Notes
+// Remember that each price is given as a string.
+// All $ signs will be at the beginning of the number.
+
+// const hidden=(arr,totalNum)=>{
+
+//   return arr.map(val=>+val.slice(1)).reduce((prev,cur)=>prev+cur) === +totalNum.slice(1) ?false : true
+// }
+
+// console.log(hidden(["$2", "$4", "$1", "$8"], "$15"))
+
+// ===190===
+
+// // const unique = (arr) => {
+// if (arr.length === 0) {
+//   return 0;
+// }
+// //   let pointer1 = 0;
+// //   let pointer2 = 1;
+
+// // for(let i=0;i<Array.length;i++)
+// //     if (arr[pointer1] !== arr[pointer2]) {
+// //       pointer1++;
+// //       arr[pointer1] = arr[pointer2];
+// //     }
+// //     console.log(pointer1, pointer2);
+// //   }
+// return i + 1;
+// // };
+
+// console.log(unique([1, 1, 1, 2, 2, 3, 3, 5]));
+
 // ===189===
 
 // const sumZeor = (arr) => {
