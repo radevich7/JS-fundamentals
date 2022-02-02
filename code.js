@@ -1,4 +1,77 @@
 // // "use strict";
+// ===197===
+// POV: You are in an exam and time has just run out. While the teacher's back is turned, you hastily take the opportunity to finish scribbling down the last few words of the conclusion.
+
+// For this challenge, it takes 0.5 seconds to write a character (not including spaces). Given the full sentence and the unfinished sentence as inputs, return the time it takes to finish writing in seconds.
+
+// Worked Example
+// timeToFinish(
+//   "And so brings my conclusion to its conclusion.",
+//   "And so brings my conclusion to"
+// ) ➞ 7
+
+// // "its" has 3 characters
+// // "conclusion." has 11 characters, including punctuation.
+// // 11 + 3 = 14
+// // 14 x 0.5 = 7
+// // Remember not to include spaces.
+// Examples
+// timeToFinish(
+//   "And so brings my conclusion to its conclusion.",
+//   "And so brings my conclusion to its conclus"
+// ) ➞ 2
+
+// timeToFinish(
+//   "As a result, my point is still valid.",
+//   "As a result, my"
+// ) ➞ 9
+
+// timeToFinish(
+//   "Thank you for reading my essay.",
+//   "T"
+// ) ➞ 12.5
+// Notes
+// The unfinished sentence is always found at the start of a complete sentence.
+const timeToFinish = (finalSentence, currentSentence) => {
+  let first = finalSentence.replace(/\s/g, "");
+  let second = currentSentence.replace(/\s/g, "");
+  return (first.length - second.length) / 2;
+};
+
+console.log(timeToFinish("Thank you for reading my essay.", "T"));
+
+// ===196===
+// Your task, is to create N x N multiplication table, of size n provided in parameter.
+
+// For example, when n is 5, the multiplication table is:
+
+// 1, 2, 3, 4, 5
+// 2, 4, 6, 8, 10
+// 3, 6, 9, 12, 15
+// 4, 8, 12, 16, 20
+// 5, 10, 15, 20, 25
+// This example will result in:
+
+// [[1, 2, 3, 4, 5], [2, 4, 6, 8, 10], [3, 6, 9, 12, 15], [4, 8, 12, 16, 20], [5, 10, 15, 20, 25]]
+// Examples
+// multiplicationTable(1) ➞ [[1]]
+
+// multiplicationTable(3) ➞ [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+// Notes
+// N/A
+
+// const multiplicationTable=(num)=>{
+//     let arr=[];
+//     for(let i=1;i<=num;i++){
+//         arr.push(i)
+//     }
+//     let final=[];
+//       for(let k=1;k<=arr.length;k++){
+//          arr.push(Array.from(arr,x=>x*k ))
+//     }
+//     console.log(final)
+// }
+// console.log(multiplicationTable(3))
 // ===195===
 // Given two integers a and b, return how many times a can be halved while still being greater than b.
 
