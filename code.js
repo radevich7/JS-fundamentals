@@ -1,4 +1,37 @@
 // // "use strict";
+// ===198===
+// John is playing a dice game. The rules are as follows.
+
+// Roll two dice.
+// Add the numbers on the dice together.
+// Add the total to your overall score.
+// Repeat this for three rounds.
+// But if you roll DOUBLES, your score is instantly wiped to 0 and your game ends immediately!
+
+// Create a function which takes in a matrix as input, and return John's score after his game has ended.
+
+// Examples
+// diceGame([[1, 2], [3, 4], [5, 6]]) ➞ 21
+
+// diceGame([[1, 1], [5, 6], [6, 4]]) ➞ 0
+
+// diceGame([[4, 5], [4, 5], [4, 5]]) ➞ 27
+// Notes
+// Ignore all other arrays in the matrix if a throw happens to be doubles and go straight to returning 0.
+// John only has two dice and will always give you outcomes for three rounds.
+
+// const diceGame=(arr)=>{
+
+//   let total=[];
+//   // check if prev ===cur return 0;
+//   //if different add together
+//   for (let i=0; i < arr.length;i++){
+//      arr[i].reduce((prev,cur)=>prev===cur ? total.push(0) : total.push(prev+cur))
+//   }
+//   return total.includes(0) ? 0 : total.reduce((prev,cur)=>prev+cur)
+//   }
+
+//   console.log(diceGame([[1, 2], [3, 4], [5, 6]]))
 // ===197===
 // POV: You are in an exam and time has just run out. While the teacher's back is turned, you hastily take the opportunity to finish scribbling down the last few words of the conclusion.
 
@@ -32,13 +65,13 @@
 // ) ➞ 12.5
 // Notes
 // The unfinished sentence is always found at the start of a complete sentence.
-const timeToFinish = (finalSentence, currentSentence) => {
-  let first = finalSentence.replace(/\s/g, "");
-  let second = currentSentence.replace(/\s/g, "");
-  return (first.length - second.length) / 2;
-};
+// const timeToFinish = (finalSentence, currentSentence) => {
+//   let first = finalSentence.replace(/\s/g, "");
+//   let second = currentSentence.replace(/\s/g, "");
+//   return (first.length - second.length) / 2;
+// };
 
-console.log(timeToFinish("Thank you for reading my essay.", "T"));
+// console.log(timeToFinish("Thank you for reading my essay.", "T"));
 
 // ===196===
 // Your task, is to create N x N multiplication table, of size n provided in parameter.
