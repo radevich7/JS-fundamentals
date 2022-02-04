@@ -1,4 +1,43 @@
 // // "use strict";
+// ===199===
+// Given a string, return a sorted array of words formed from the first three letters, then the next three letters, shifting by only one.
+
+// Worked Example
+// threeLetterCollection("edabit") ➞ ["abi", "bit", "dab", "eda"]
+// // 1st word: "eda"
+// // 2nd word: "dab"
+// // 3rd word: "abi"
+// // 4th word: "bit"
+// // Remember to sort the array!
+// Examples
+// threeLetterCollection("slap") ➞ ["lap", "sla"]
+
+// threeLetterCollection("click") ➞ ["cli", "ick", "lic"]
+
+// threeLetterCollection("cat") ➞ ["cat"]
+
+// threeLetterCollection("hi") ➞ []
+// Notes
+// Return an empty array if given a word with less than 3 letters.
+
+//1. if the word is less than 3letters return empty array
+//2. loop over the array and push it to the new array 3 letter word
+// 3. sort the array
+
+const collection = (str) => {
+  if (str.length < 3) return [];
+  let arr = [...str];
+
+  let min = 0;
+  let final = [];
+  for (let i = 0; i < arr.length - 3 + 1; i++) {
+    final.push(Array.from(arr).splice(i, 3).join(""));
+  }
+
+  return final.sort();
+};
+
+console.log(collection("click"));
 // ===198===
 // John is playing a dice game. The rules are as follows.
 
