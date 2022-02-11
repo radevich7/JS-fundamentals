@@ -1,4 +1,26 @@
 // // "use strict";
+// ===201===
+// length of the array min 8
+//total time not exceed 120 min
+// very easy question 5 min each
+//easy question 10 min each
+// medium question 15 min each
+//hard ones 20 min each
+
+// const passInterview=(arr, time)=>{
+
+//   if(arr.length!==8 || time>120) return 'disqualified'
+//       let checker=[5,5,10,10,15,15,20,20]
+
+//       for (let i=0;i<arr.length;i++){
+//           if(arr[i]>checker[i]){
+//               return 'disqualified'
+//           }
+//       }
+//       return 'qualified'
+//   }
+
+//   console.log(passInterview([5, 5, 10, 10, 15, 15, 20, 20],130))
 // ===200===
 // Consider the following operation on an arbitrary positive integer:
 
