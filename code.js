@@ -1,4 +1,22 @@
 // // "use strict";
+// ===203===
+// Write a function that removes all capital letters from a sentence except the first letter, puts quotation marks around the sentence and adds ", whispered Edabit." at the end.
+
+// Examples
+// shhh("HI THERE!") ➞ '"Hi there!", whispered Edabit.'
+
+// shhh("tHaT'S Pretty awesOme") ➞ '"That's pretty awesome", whispered Edabit.'
+
+// shhh("") ➞ '"", whispered Edabit.'
+// Notes
+// Don't forget to surround the original string with double quotation marks "".
+
+// const removeUpperCase=(sentence)=>{
+//   if(!sentence)return `"", whispered Edabit.`
+//   return `"${sentence[0].toUpperCase()}${sentence.slice(1).toLowerCase()}", whispered Edabit.`
+// }
+
+// console.log(removeUpperCase(""))
 // ===202===
 // Create a function that takes two strings, a and b. Return the number of times the two strings contain the same two letters at the same index. The two letters must appear at consecutive indices.
 
