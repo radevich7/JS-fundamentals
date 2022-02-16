@@ -1,4 +1,27 @@
 // // "use strict";
+// ===205===
+// Create a function that takes a variable number of arguments, each argument representing the number of items in a group. The function should return the number of permutations (combinations) of choices you would have if you selected one item from each group.
+
+// Examples
+// combinations(2, 3) ➞ 6
+
+// combinations(3, 7, 4) ➞ 84
+
+// combinations(2, 3, 4, 5) ➞ 120
+// Notes
+// Don't overthink this one.
+// Input may include the number zero.
+
+function combinations(items) {
+  if (arguments.length < 2) return items;
+
+  return [...arguments].reduce((prev, cur) => {
+    if (cur === 0) cur = 1;
+    return prev * cur;
+  });
+}
+
+console.log(combinations(2, 0));
 // ===204===
 // Create a sorting function which sorts numbers not by numerical order, but by number length! This means sorting numbers with the least amount of digits first, up to the numbers with the most digits.
 
